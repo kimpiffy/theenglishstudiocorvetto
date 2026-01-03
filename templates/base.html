@@ -97,57 +97,61 @@
 
   <header>
     <!-- Navbar -->
-  <button class="navbar-toggler hamburger" type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarNav"
-        aria-controls="navbarNav"
-        aria-expanded="false"
-        aria-label="navbar toggler">
-  <span></span>
-  <span></span>
-  <span></span>
-</button>
+<nav class="navbar navbar-expand-lg px-4 py-3">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="{% url 'index' %}">
+      <img src="{% static 'compressed/logofull.webp' %}" class="nav_img"
+           alt="{% trans 'The English Studio logo' %}"
+           aria-label="{% trans 'The English Studio Logo - Navigate Home' %}">
+    </a>
 
-<div class="collapse navbar-collapse" id="navbarNav">
-  <ul class="navbar-nav ms-auto text-uppercase fw-bold">
-    <li class="nav-item">
-      <a class="nav-link navy primaryfont focusstyle" href="{% url 'index' %}#about">{% trans "About" %}</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link navy primaryfont focusstyle" href="{% url 'schedule' %}">{% trans "Schedule" %}</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link navy primaryfont focusstyle" href="{% url 'gallery' %}">{% trans "Gallery" %}</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link navy primaryfont focusstyle" href="{% url 'blog_list' %}">{% trans "Blog" %}</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link navy primaryfont focusstyle" href="{% url 'contact' %}">{% trans "Contact" %}</a>
-    </li>
-  </ul>
+    <button class="navbar-toggler hamburger" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="navbar toggler" aria-controls="navbarNav" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
 
-          <div class="ms-3 locale_select">
-            <form action="{% url 'set_language' %}" method="post" style="display:inline;">
-              {% csrf_token %}
-              <input type="hidden" name="language" value="en">
-              <input type="hidden" name="next" value="{{ request.path }}">
-              <button type="submit" class="py-2 lang-but" aria-label="{% trans 'Switch to English' %}">
-                <img src="https://flagcdn.com/16x12/gb.png" alt="{% trans 'English' %}" class="locale_img" style="cursor:pointer;">
-              </button>
-            </form>
-            <form action="{% url 'set_language' %}" method="post" style="display:inline;">
-              {% csrf_token %}
-              <input type="hidden" name="language" value="it">
-              <input type="hidden" name="next" value="{{ request.path }}">
-              <button type="submit" class="py-2 lang-but" aria-label="{% trans 'Switch to Italian' %}">
-                <img src="https://flagcdn.com/16x12/it.png" class="locale_img" alt="{% trans 'Italian' %}" style="cursor:pointer;">
-              </button>
-            </form>
-          </div>
-        </div>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto text-uppercase fw-bold">
+        <li class="nav-item">
+          <a class="nav-link navy primaryfont focusstyle" href="{% url 'index' %}#about">{% trans "About" %}</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link navy primaryfont focusstyle" href="{% url 'schedule' %}">{% trans "Schedule" %}</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link navy primaryfont focusstyle" href="{% url 'gallery' %}">{% trans "Gallery" %}</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link navy primaryfont focusstyle" href="{% url 'blog_list' %}">{% trans "Blog" %}</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link navy primaryfont focusstyle" href="{% url 'contact' %}">{% trans "Contact" %}</a>
+        </li>
+      </ul>
+
+      <div class="ms-3 locale_select">
+        <form action="{% url 'set_language' %}" method="post" style="display:inline;">
+          {% csrf_token %}
+          <input type="hidden" name="language" value="en">
+          <input type="hidden" name="next" value="{{ request.path }}">
+          <button type="submit" class="py-2 lang-but" aria-label="{% trans 'Switch to English' %}">
+            <img src="https://flagcdn.com/16x12/gb.png" alt="{% trans 'English' %}" class="locale_img" style="cursor:pointer;">
+          </button>
+        </form>
+        <form action="{% url 'set_language' %}" method="post" style="display:inline;">
+          {% csrf_token %}
+          <input type="hidden" name="language" value="it">
+          <input type="hidden" name="next" value="{{ request.path }}">
+          <button type="submit" class="py-2 lang-but" aria-label="{% trans 'Switch to Italian' %}">
+            <img src="https://flagcdn.com/16x12/it.png" class="locale_img" alt="{% trans 'Italian' %}" style="cursor:pointer;">
+          </button>
+        </form>
       </div>
-    </nav>
+    </div>
+  </div>
+</nav>
   </header>
 
   <main>
@@ -191,8 +195,8 @@
       <div class="col-12 col-lg-3 d-flex flex-column align-items-center justify-content-center body-text off-white order-4">
         <div class="d-flex flex-wrap flex-row flex-lg-column align-items-center justify-content-center text-center">
           <a href="{% url 'index' %}#about" class="focusstyle px-1 body-text off-white">{% trans "About" %}</a>
-          <a href="{% url 'schedule' %}" class="focusstyle px-1 body-text off-white">{% trans "Schedule" %}</a>
           <a href="{% url 'gallery' %}" class="focusstyle px-1 body-text off-white">{% trans "Gallery" %}</a>
+          <a href="{% url 'schedule' %}" class="focusstyle px-1 body-text off-white">{% trans "Schedule" %}</a>
           <a href="{% url 'blog_list' %}" class="focusstyle px-1 body-text off-white">{% trans "Blog" %}</a>
           <a href="{% url 'contact' %}" class="focusstyle px-1 body-text off-white">{% trans "Contact" %}</a>
           <a href="{% url 'portal:portal_login' %}" class="focusstyle px-1 body-text off-white">{% trans "Staff" %}</a>
