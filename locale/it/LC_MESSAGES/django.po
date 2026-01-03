@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-08-25 15:04+0100\n"
+"POT-Creation-Date: 2026-01-03 13:10+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Kim Piffy <piffyinfo@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -14,269 +14,320 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: .\blog\models.py:27
+#: blog/models.py:27
 msgid "Draft"
 msgstr ""
 
-#: .\blog\models.py:28
+#: blog/models.py:28
 msgid "Published"
 msgstr ""
 
-#: .\blog\models.py:32
+#: blog/models.py:32
 msgid "Title (EN)"
 msgstr ""
 
-#: .\blog\models.py:35
+#: blog/models.py:35
 msgid "Title (IT)"
 msgstr ""
 
-#: .\blog\models.py:40
+#: blog/models.py:40
 msgid "Content (EN)"
 msgstr ""
 
-#: .\blog\models.py:41
+#: blog/models.py:41
 msgid "Content (IT)"
 msgstr ""
 
-#: .\blog\models.py:60
+#: blog/models.py:60
 #, fuzzy
 #| msgid "Blog"
 msgid "Blog Post"
 msgstr "Blog"
 
-#: .\blog\models.py:61
+#: blog/models.py:61
 msgid "Blog Posts"
 msgstr ""
 
-msgid "Go Back"
-msgstr "TORNA INDIETRO"
+#: contact/forms.py:18 templates/contact.html:95
+msgid "Select an option"
+msgstr "Seleziona un'opzione"
 
-msgid "MORE POSTS"
-msgstr "ALTRI POST"
+#: contact/forms.py:24 templates/contact.html:32
+msgid "Full Name"
+msgstr "Nome e Cognome"
 
-#: .\schedule\models.py:12
+#: contact/forms.py:27 templates/contact.html:50 templates/contact.html:161
+#: templates/privacy.html:53 templates/privacy.html:263
+msgid "Email"
+msgstr "Email"
+
+#: contact/forms.py:34 templates/contact.html:68 templates/contact.html:157
+msgid "Phone"
+msgstr "Telefono"
+
+#: contact/forms.py:40 templates/contact.html:85
+msgid "Subject"
+msgstr "Oggetto"
+
+#: contact/forms.py:44 templates/contact.html:112
+msgid "Message"
+msgstr "Messaggio"
+
+#: contact/forms.py:48 templates/contact.html:136
+msgid "Subscribe to newsletter"
+msgstr "Iscriviti alla newsletter"
+
+#: contact/forms.py:57
+msgid "Please select a subject."
+msgstr ""
+
+#: contact/forms.py:67 contact/forms.py:73
+msgid "This field is required."
+msgstr ""
+
+#: schedule/models.py:12
 msgid "Class Name (EN)"
 msgstr ""
 
-#: .\schedule\models.py:17
+#: schedule/models.py:17
 msgid "Class Name (IT)"
 msgstr ""
 
-#: .\schedule\models.py:21
+#: schedule/models.py:21
 msgid "Emoji"
 msgstr ""
 
-#: .\schedule\models.py:22
+#: schedule/models.py:22
 msgid "Use a single emoji to represent this class"
 msgstr ""
 
-#: .\schedule\models.py:40
+#: schedule/models.py:40
 msgid "One-time only"
 msgstr ""
 
-#: .\schedule\models.py:41
+#: schedule/models.py:41
 msgid "Weekly"
 msgstr ""
 
-#: .\schedule\models.py:42
+#: schedule/models.py:42
 msgid "Every 2 weeks"
 msgstr ""
 
-#: .\schedule\models.py:43
+#: schedule/models.py:43
 msgid "Monthly"
 msgstr ""
 
-#: .\schedule\models.py:44
+#: schedule/models.py:44
 msgid "Custom weekdays"
 msgstr ""
 
-#: .\schedule\models.py:51
+#: schedule/models.py:51
 #, fuzzy
 #| msgid "Classes"
 msgid "Class"
 msgstr "Lezioni"
 
-#: .\schedule\models.py:53
+#: schedule/models.py:53
 msgid "Date"
 msgstr ""
 
-#: .\schedule\models.py:55
+#: schedule/models.py:55
 msgid "Start Time"
 msgstr ""
 
-#: .\schedule\models.py:59
+#: schedule/models.py:59
 msgid "End Time"
 msgstr ""
 
-#: .\schedule\models.py:66
+#: schedule/models.py:66
 msgid "Repeats"
 msgstr ""
 
-#: .\schedule\models.py:71
+#: schedule/models.py:71
 msgid "Days of the Week"
 msgstr ""
 
-#: .\schedule\models.py:72
+#: schedule/models.py:72
 msgid "For custom repeat, enter days like 'Mon,Wed,Fri'"
 msgstr ""
 
-#: .\schedule\models.py:78
+#: schedule/models.py:78
 msgid "Recurrence Exceptions"
 msgstr ""
 
-#: .\schedule\models.py:79
+#: schedule/models.py:79
 msgid "Dates on which this recurring event should be skipped"
 msgstr ""
 
-#: .\schedule\models.py:84
+#: schedule/models.py:84
 msgid "Repeat Until"
 msgstr ""
 
-#: .\schedule\models.py:85
+#: schedule/models.py:85
 msgid "Last day this event should occur"
 msgstr ""
 
-#: .\templates\base.html:18 .\templates\base.html:111 .\templates\base.html:149
-msgid "The English Studio"
+#: templates/404.html:4
+msgid "Page not found"
+msgstr ""
+
+#: templates/404.html:9
+msgid "Sorry, we can’t find that page."
+msgstr ""
+
+#: templates/404.html:10
+msgid "Go home"
+msgstr ""
+
+#: templates/base.html:104 templates/base.html:165
+#, fuzzy
+#| msgid "The English Studio"
+msgid "The English Studio logo"
 msgstr "The English Studio"
 
-#: .\templates\base.html:50 .\templates\base.html:106
+#: templates/base.html:105 templates/base.html:166
 msgid "The English Studio Logo - Navigate Home"
 msgstr "The English Studio Logo - Naviga alla Home"
 
-#: .\templates\base.html:60 .\templates\base.html:136
+#: templates/base.html:116 templates/base.html:196
 msgid "About"
 msgstr "Informazioni"
 
-#: .\templates\base.html:63 .\templates\base.html:138
-#: .\templates\schedule\calendar.html:10
+#: templates/base.html:119 templates/base.html:197
+#: templates/schedule/calendar.html:9
 msgid "Schedule"
 msgstr "Orario"
 
-#: .\templates\base.html:66 .\templates\base.html:137
+#: templates/base.html:122 templates/base.html:198
+msgid "Gallery"
+msgstr "Galleria"
+
+#: templates/base.html:125 templates/base.html:199
 msgid "Blog"
 msgstr "Blog"
 
-#: .\templates\base.html:69 .\templates\base.html:139
+#: templates/base.html:128 templates/base.html:200
 msgid "Contact"
 msgstr "Contatto"
 
-#: .\templates\base.html:78
+#: templates/base.html:138
+msgid "Switch to English"
+msgstr ""
+
+#: templates/base.html:139
 msgid "English"
 msgstr "Inglese"
 
-#: .\templates\base.html:86
+#: templates/base.html:146
+msgid "Switch to Italian"
+msgstr ""
+
+#: templates/base.html:147
 msgid "Italian"
 msgstr "Italiano"
 
-#: .\templates\base.html:119
+#: templates/base.html:171 templates/base.html:209
+msgid "The English Studio"
+msgstr "The English Studio"
+
+#: templates/base.html:179
 #, fuzzy
 #| msgid "Follow us on social media"
 msgid "Follow us on"
 msgstr "Seguici sui social media"
 
-#: .\templates\base.html:140
+#: templates/base.html:201
 msgid "Staff"
 msgstr "Personale"
 
-#: .\templates\base.html:146 .\templates\privacy.html:4
-#: .\templates\privacy.html:12
+#: templates/base.html:207 templates/privacy.html:4 templates/privacy.html:12
 msgid "Privacy Policy"
 msgstr "Informativa sulla privacy"
 
-#: .\templates\base.html:153
+#: templates/base.html:213
 msgid "Made with ♥ by Kim Piffy"
 msgstr "Fatto con ♥ da Kim Piffy"
 
-#: .\templates\contact.html:5 .\templates\contact.html:12
+#: templates/blog/blog_detail.html:61
+msgid "MORE POSTS"
+msgstr "ALTRI POST"
+
+#: templates/blog/blog_detail.html:68
+msgid "Go Back"
+msgstr "TORNA INDIETRO"
+
+#: templates/contact.html:5 templates/contact.html:12
 msgid "Contact Us"
 msgstr "Contattaci"
 
-#: .\templates\contact.html:16
-msgid "Full Name"
-msgstr "Nome e Cognome"
+#: templates/contact.html:68
+msgid "optional"
+msgstr ""
 
-#: .\templates\contact.html:21 .\templates\contact.html:75
-#: .\templates\privacy.html:58 .\templates\privacy.html:268
-msgid "Email"
-msgstr "Email"
-
-#: .\templates\contact.html:26 .\templates\contact.html:71
-msgid "Phone"
-msgstr "Telefono"
-
-#: .\templates\contact.html:31
-msgid "Subject"
-msgstr "Oggetto"
-
-#: .\templates\contact.html:33
-msgid "Select an option"
-msgstr "Seleziona un'opzione"
-
-#: .\templates\contact.html:34 .\templates\index.html:16
+#: templates/contact.html:96 templates/index.html:16
 msgid "After School Club"
 msgstr "Dopo Scuola"
 
-#: .\templates\contact.html:35
+#: templates/contact.html:97
 msgid "Private Lessons"
 msgstr "Lezioni Private"
 
-#: .\templates\contact.html:36
+#: templates/contact.html:98
 msgid "Business English Lessons"
 msgstr "Lezioni di Inglese Commerciale"
 
-#: .\templates\contact.html:37
+#: templates/contact.html:99
 msgid "General English Lessons"
 msgstr "Lezioni di Inglese Generale"
 
-#: .\templates\contact.html:38
+#: templates/contact.html:100
 msgid "IELTS Enquiry"
 msgstr "Richiesta per IELTS"
 
-#: .\templates\contact.html:39
+#: templates/contact.html:101
 msgid "Events"
 msgstr ""
 
-#: .\templates\contact.html:40
+#: templates/contact.html:102
 msgid "Other"
 msgstr "Altro"
 
-#: .\templates\contact.html:45
-msgid "Message"
-msgstr "Messaggio"
-
-#: .\templates\contact.html:52
-msgid "Subscribe to newsletter"
-msgstr "Iscriviti alla newsletter"
-
-#: .\templates\contact.html:56
+#: templates/contact.html:141
 msgid "Send Message"
 msgstr "Invia messaggio"
 
-#: .\templates\contact.html:63
+#: templates/contact.html:149
 msgid "Where to find us"
 msgstr "Dove trovarci"
 
-#: .\templates\contact.html:67 .\templates\privacy.html:57
-#: .\templates\privacy.html:269
+#: templates/contact.html:153 templates/privacy.html:52
+#: templates/privacy.html:264
 msgid "Address"
 msgstr "Indirizzo"
 
+#: templates/contact.html:193
 msgid "Thank you!"
 msgstr "Grazie!"
 
+#: templates/contact.html:197
 msgid "We look forward to embarking on this exciting journey with you!"
-msgstr "Non vediamo l'ora di intraprendere questo entusiasmante viaggio con voi!"
+msgstr ""
+"Non vediamo l'ora di intraprendere questo entusiasmante viaggio con voi!"
 
+#: templates/contact.html:198
 msgid "We aim to reply within 1–2 working days."
 msgstr "Puntiamo a rispondere entro 1-2 giorni lavorativi."
 
-#: .\templates\flyers\flyer_confirm_delete.html:4
-#: .\templates\flyers\flyer_confirm_delete.html:8
+#: templates/contact.html:205 templates/flyers/homepage_flyers.html:115
+msgid "Close"
+msgstr ""
+
+#: templates/flyers/flyer_confirm_delete.html:4
+#: templates/flyers/flyer_confirm_delete.html:8
 msgid "Delete Flyer"
 msgstr ""
 
-#: .\templates\flyers\flyer_confirm_delete.html:13
+#: templates/flyers/flyer_confirm_delete.html:13
 #, python-format
 msgid ""
 "\n"
@@ -284,192 +335,184 @@ msgid ""
 "        "
 msgstr ""
 
-#: .\templates\flyers\flyer_confirm_delete.html:20
-#: .\templates\flyers\flyer_form.html:50
+#: templates/flyers/flyer_confirm_delete.html:20
+#: templates/flyers/flyer_form.html:58
 msgid "Current image preview:"
 msgstr ""
 
-#: .\templates\flyers\flyer_confirm_delete.html:27
+#: templates/flyers/flyer_confirm_delete.html:27
 msgid "Event date:"
 msgstr ""
 
-#: .\templates\flyers\flyer_confirm_delete.html:34
+#: templates/flyers/flyer_confirm_delete.html:34
 msgid "Yes, delete it"
 msgstr ""
 
-#: .\templates\flyers\flyer_confirm_delete.html:37
-#: .\templates\flyers\flyer_form.html:57 .\templates\flyers\reorder.html:48
+#: templates/flyers/flyer_confirm_delete.html:37
+#: templates/flyers/flyer_form.html:65 templates/flyers/reorder.html:49
 msgid "Cancel"
 msgstr ""
 
-#: .\templates\flyers\flyer_form.html:5 .\templates\flyers\flyer_form.html:11
+#: templates/flyers/flyer_form.html:5 templates/flyers/flyer_form.html:11
 msgid "Edit Flyer"
 msgstr ""
 
-#: .\templates\flyers\flyer_form.html:5
+#: templates/flyers/flyer_form.html:5
 msgid "Add Flyer"
 msgstr ""
 
-#: .\templates\flyers\flyer_form.html:11
+#: templates/flyers/flyer_form.html:11
 msgid "Add New Flyer"
 msgstr ""
 
-#: .\templates\flyers\flyer_form.html:56
+#: templates/flyers/flyer_form.html:64
 msgid "Save Flyer"
 msgstr ""
 
-#: .\templates\flyers\flyers_list.html:7
+#: templates/flyers/flyers_list.html:7
 msgid "Manage Flyers"
 msgstr ""
 
-#: .\templates\flyers\flyers_list.html:9
+#: templates/flyers/flyers_list.html:9
 msgid "Reorder"
 msgstr ""
 
-#: .\templates\flyers\flyers_list.html:10
+#: templates/flyers/flyers_list.html:10
 msgid "New Flyer"
 msgstr ""
 
-#: .\templates\flyers\flyers_list.html:17
+#: templates/flyers/flyers_list.html:17
 msgid "Preview"
 msgstr ""
 
-#: .\templates\flyers\flyers_list.html:18
+#: templates/flyers/flyers_list.html:18
 msgid "Title"
 msgstr ""
 
-#: .\templates\flyers\flyers_list.html:19
+#: templates/flyers/flyers_list.html:19
 msgid "Event date"
 msgstr ""
 
-#: .\templates\flyers\flyers_list.html:20
+#: templates/flyers/flyers_list.html:20
 msgid "Order"
 msgstr ""
 
-#: .\templates\flyers\flyers_list.html:21
+#: templates/flyers/flyers_list.html:21
 msgid "Actions"
 msgstr ""
 
-#: .\templates\flyers\flyers_list.html:50
+#: templates/flyers/flyers_list.html:50
 msgid "Edit"
 msgstr ""
 
-#: .\templates\flyers\flyers_list.html:51
+#: templates/flyers/flyers_list.html:51
 msgid "Delete"
 msgstr ""
 
-#: .\templates\flyers\flyers_list.html:57
+#: templates/flyers/flyers_list.html:57
 msgid "No flyers yet."
 msgstr ""
 
-#: .\templates\flyers\homepage_flyers.html:9
+#: templates/flyers/homepage_flyers.html:9
 msgid "Upcoming Events"
 msgstr "Eventi in Arrivo"
 
-#: .\templates\flyers\homepage_flyers.html:10
+#: templates/flyers/homepage_flyers.html:10
 msgid "Click on a flyer to find out more"
 msgstr "Clicca su un volantino per saperne di più"
 
-#: .\templates\flyers\homepage_flyers.html:39
+#: templates/flyers/homepage_flyers.html:39
 msgid "Previous"
 msgstr ""
 
-#: .\templates\flyers\homepage_flyers.html:40
+#: templates/flyers/homepage_flyers.html:40
 msgid "Next"
 msgstr ""
 
-#: .\templates\flyers\homepage_flyers.html:115
-msgid "Close"
-msgstr ""
-
-#: .\templates\flyers\homepage_flyers.html:137
+#: templates/flyers/homepage_flyers.html:137
 msgid "VIEW THE SCHEDULE"
 msgstr "VISUALIZZA IL CALENDARIO"
 
-#: .\templates\flyers\reorder.html:4 .\templates\flyers\reorder.html:9
+#: templates/flyers/reorder.html:5 templates/flyers/reorder.html:10
 msgid "Reorder Flyers"
 msgstr ""
 
-#: .\templates\flyers\reorder.html:10
+#: templates/flyers/reorder.html:11
 #, fuzzy
 #| msgid "Back to top"
 msgid "Back to list"
 msgstr "Torna su"
 
-#: .\templates\flyers\reorder.html:13
+#: templates/flyers/reorder.html:14
 msgid "Drag items to change their order. Click Save when done."
 msgstr ""
 
-#: .\templates\flyers\reorder.html:18
+#: templates/flyers/reorder.html:19
 msgid "Drag"
 msgstr ""
 
-#: .\templates\flyers\reorder.html:40
+#: templates/flyers/reorder.html:41
 msgid "No flyers to reorder."
 msgstr ""
 
-#: .\templates\flyers\reorder.html:47
+#: templates/flyers/reorder.html:48
 msgid "Save Order"
 msgstr ""
 
-#: .\templates\flyers\reorder.html:52
+#: templates/flyers/reorder.html:53
 msgid "Order saved."
 msgstr ""
 
-#: .\templates\flyers\reorder.html:105
-msgid "Failed to save order."
-msgstr ""
-
-#: .\templates\index.html:5
+#: templates/index.html:5
 msgid "Home"
 msgstr ""
 
-#: .\templates\index.html:17
+#: templates/index.html:17
 msgid "Making friends and learning English is so fun!"
 msgstr "Fare amicizia e imparare l'inglese è così divertente!"
 
-#: .\templates\index.html:18 .\templates\index.html:26
-#: .\templates\index.html:34 .\templates\index.html:42
+#: templates/index.html:18 templates/index.html:26 templates/index.html:34
+#: templates/index.html:42
 msgid "Learn More"
 msgstr "Scopri di più"
 
-#: .\templates\index.html:24
+#: templates/index.html:24
 msgid "Business English"
 msgstr "Inglese Commerciale"
 
-#: .\templates\index.html:25
+#: templates/index.html:25
 msgid "Study to access a world of great opportunities."
 msgstr "Studia per accedere a un mondo di grandi opportunità."
 
-#: .\templates\index.html:32
+#: templates/index.html:32
 msgid "Private Tutoring"
 msgstr "Tutoraggio privato"
 
-#: .\templates\index.html:33
+#: templates/index.html:33
 msgid "Personalized support to help you reach your goals."
 msgstr "Supporto personalizzato per aiutarti a raggiungere i tuoi obiettivi."
 
-#: .\templates\index.html:40
+#: templates/index.html:40
 msgid "IELTS Test Preps"
 msgstr "Preparazione al test IELTS"
 
-#: .\templates\index.html:41
+#: templates/index.html:41
 msgid "Feel prepared to reach your highest potential."
 msgstr "Sentiti pronto a raggiungere il tuo massimo potenziale."
 
-#: .\templates\index.html:57
+#: templates/index.html:57
 msgid "Teacher"
 msgstr "Insegnante"
 
-#: .\templates\index.html:58
+#: templates/index.html:58
 msgid "Learn English"
 msgstr "Impara l'inglese"
 
-#: .\templates\index.html:59
+#: templates/index.html:59
 msgid "with Leanne"
 msgstr "con Leanne"
 
-#: .\templates\index.html:60
+#: templates/index.html:60
 msgid ""
 "I am a British mother tongue English teacher who was born and raised in "
 "England. I graduated from University in 2014 and have pursued my passion as "
@@ -487,7 +530,7 @@ msgstr ""
 "English di grandi multinazionali, dalle lezioni private con adulti e "
 "bambini, ai gruppi di preparazione ai test IELTS e TOEIC."
 
-#: .\templates\index.html:62
+#: templates/index.html:62
 msgid ""
 "All of this experience has led me to where I am today, whereby I am so proud "
 "to present to you <b>The English Studio</b> - my new, comprehensive English "
@@ -499,7 +542,7 @@ msgstr ""
 "l’inglese. Qui offrirò lezioni e attività per tutti, ma soprattutto per i "
 "bambini."
 
-#: .\templates\index.html:64
+#: templates/index.html:64
 msgid ""
 "Combined with my passion for learning, I will give your children the best "
 "experience possible, in an atmosphere where the kids are excited to learn "
@@ -520,7 +563,7 @@ msgstr ""
 "anima. Sono certa che, se siete interessati, non rimarrete delusi, e nemmeno "
 "i vostri figli."
 
-#: .\templates\index.html:66
+#: templates/index.html:66
 msgid ""
 "The world is a spectacular place but the world without English, is a closed "
 "door. Give your children the head start that they need today."
@@ -528,25 +571,25 @@ msgstr ""
 "Il mondo è un posto spettacolare, ma senza l’inglese è una porta chiusa. "
 "Date oggi ai vostri figli il vantaggio di cui hanno bisogno."
 
-#: .\templates\index.html:74
+#: templates/index.html:74
 msgid "What We Offer"
 msgstr "Cosa Offriamo"
 
-#: .\templates\index.html:81
+#: templates/index.html:81
 msgid "AFTER SCHOOL CLUB"
 msgstr "DOPO SCUOLA"
 
-#: .\templates\index.html:82
+#: templates/index.html:82
 msgid ""
 "Come and join us after school for 90 mins of full immersion English, with "
 "our native mother tongue teacher who provides exciting and fun activities "
 "for primary school children."
 msgstr ""
-"Venite a trovarci dopo la scuola per 90 minuti di full immersion in "
-"inglese,con la nostra insegnante madrelingua che offre attività stimolanti e "
+"Venite a trovarci dopo la scuola per 90 minuti di full immersion in inglese,"
+"con la nostra insegnante madrelingua che offre attività stimolanti e "
 "divertenti per i bambini della scuola primaria."
 
-#: .\templates\index.html:83
+#: templates/index.html:83
 msgid ""
 "Expose your children to the world and help them acquire fundamental language "
 "skills at a young age, preparing them for their best possible future."
@@ -555,19 +598,21 @@ msgstr ""
 "competenzelinguistiche fondamentali fin da piccoli, preparandoli per il loro "
 "futuro migliore."
 
-#: .\templates\index.html:84
-msgid "Price from €22/90 mins."
-msgstr "Prezzo a partire da €22/90 min."
+#: templates/index.html:84
+#, fuzzy
+#| msgid "Price discussed on request."
+msgid "Price on request."
+msgstr "Prezzo da concordare su richiesta."
 
-#: .\templates\index.html:84
+#: templates/index.html:84
 msgid "Up to 8 children for each session."
 msgstr "Fino a 8 bambini per sessione."
 
-#: .\templates\index.html:94
+#: templates/index.html:94
 msgid "PRIVATE ENGLISH LESSONS"
 msgstr "LEZIONI PRIVATE DI INGLESE"
 
-#: .\templates\index.html:95
+#: templates/index.html:95
 msgid ""
 "English lessons tailored to all your needs. Our professionally trained and "
 "well-experienced teacher can help you define what you are looking for and "
@@ -577,7 +622,7 @@ msgstr ""
 "insegnante, qualificato e congrande esperienza, può aiutarti a definire ciò "
 "che stai cercando e, insieme, possiamo raggiungere ituoi obiettivi."
 
-#: .\templates\index.html:96
+#: templates/index.html:96
 msgid ""
 "Imagine a life where you are fluent in English. If you can imagine it, we "
 "can achieve it."
@@ -585,19 +630,17 @@ msgstr ""
 "Immagina una vita in cui parli fluentemente l'inglese.Se riesci a "
 "immaginarlo, noi possiamo realizzarlo."
 
-#: .\templates\index.html:98
-msgid "€27/60 mins children"
-msgstr "€27/60 min bambini"
+#: templates/index.html:98
+#, fuzzy
+#| msgid "Price discussed on request."
+msgid "Price discussed on request"
+msgstr "Prezzo da concordare su richiesta."
 
-#: .\templates\index.html:98
-msgid "€32/60 mins adults"
-msgstr "€32/60 min adulti"
-
-#: .\templates\index.html:108
+#: templates/index.html:108
 msgid "IELTS TEST PREP"
 msgstr "PREPARAZIONE AL TEST IELTS"
 
-#: .\templates\index.html:109
+#: templates/index.html:109
 msgid ""
 "Specialising in IELTS test prep, learn all the tips and tricks you need in "
 "order to achieve the score of your dreams!"
@@ -605,7 +648,7 @@ msgstr ""
 "Specializzati nella preparazione al test IELTS, scopri tutti i trucchi e i "
 "consigli necessari perraggiungere il punteggio dei tuoi sogni!"
 
-#: .\templates\index.html:110
+#: templates/index.html:110
 msgid ""
 "Our teacher has an excellent record in helping students realise their goals "
 "through her outstanding understanding of the difficult exam and how to "
@@ -615,16 +658,16 @@ msgstr ""
 "studenti a raggiungere i loro obiettivi graziealla sua straordinaria "
 "comprensione di questo difficile e di come gestire punteggi elevati."
 
-#: .\templates\index.html:112 .\templates\index.html:141
-#: .\templates\index.html:154
+#: templates/index.html:112 templates/index.html:125 templates/index.html:141
+#: templates/index.html:154
 msgid "Price discussed on request."
 msgstr "Prezzo da concordare su richiesta."
 
-#: .\templates\index.html:122
+#: templates/index.html:122
 msgid "BUSINESS ENGLISH"
 msgstr "INGLESE COMMERCIALE"
 
-#: .\templates\index.html:123
+#: templates/index.html:123
 msgid ""
 "Available both online and in-person, finesse your Business English skills "
 "and get that promotion you’ve always dreamed of."
@@ -632,7 +675,7 @@ msgstr ""
 "Disponibile sia online che di persona, affina le tue competenze di Inglese "
 "Commercialee ottieni la promozione che hai sempre sognato."
 
-#: .\templates\index.html:124
+#: templates/index.html:124
 msgid ""
 "English is THE most widely spoken international business language and you "
 "are missing out on the top opportunities if you cannot express yourself "
@@ -644,19 +687,15 @@ msgstr ""
 "opportunità!Insieme al nostro insegnante, possiamo creare un corso su misura "
 "per te e le tue esigenze."
 
-#: .\templates\index.html:125
+#: templates/index.html:125
 msgid "Also available in groups."
 msgstr "Disponibile anche in gruppo."
 
-#: .\templates\index.html:125
-msgid "€32/60 mins"
-msgstr "€32/60 min"
-
-#: .\templates\index.html:136
+#: templates/index.html:136
 msgid "WORKSHOPS & ACTIVITIES"
 msgstr ""
 
-#: .\templates\index.html:137
+#: templates/index.html:137
 msgid ""
 "Looking for a creative way to improve your English? Or a different way to "
 "show your child how fun and limitless learning English can be?"
@@ -665,7 +704,7 @@ msgstr ""
 "mostrare a tuo figlio quanto può essere divertente e illimitato imparare "
 "l'inglese?"
 
-#: .\templates\index.html:138
+#: templates/index.html:138
 msgid ""
 "Come and try our workshops! At The English Studio, we work alongside other "
 "individual talents in the area to bring you some top tier bilingual "
@@ -675,15 +714,15 @@ msgstr ""
 "con altri talenti della zona per offrirti laboratori bilingue di alto "
 "livello."
 
-#: .\templates\index.html:139
+#: templates/index.html:139
 msgid "Spaces are limited so make sure to book in ASAP!"
 msgstr "I posti sono limitati, quindi assicurati di prenotare al più presto!"
 
-#: .\templates\index.html:151
+#: templates/index.html:151
 msgid "PARTIES"
 msgstr ""
 
-#: .\templates\index.html:152
+#: templates/index.html:152
 msgid ""
 "Whether you want to rent our cozy space for a party, or if you want to work "
 "together to plan your child’s birthday party of their dreams, send us a "
@@ -694,93 +733,120 @@ msgstr ""
 "tuo figlio, inviaci un messaggio per scoprire come possiamo trasformare il "
 "suo sogno in realtà."
 
-#: .\templates\index.html:161
+#: templates/index.html:161
 msgid "CONTACT US"
 msgstr "Contattaci"
 
-#: .\templates\privacy.html:13
+#: templates/portal/login.html:7
+#, fuzzy
+#| msgid "The English Studio"
+msgid "The English Studio Logo"
+msgstr "The English Studio"
+
+#: templates/portal/login.html:9
+#, fuzzy
+#| msgid "Staff"
+msgid "Staff Login"
+msgstr "Personale"
+
+#: templates/portal/login.html:25
+msgid ""
+"Incorrect credentials. Please check your username and password and try again."
+msgstr ""
+
+#: templates/portal/login.html:32
+msgid "Username:"
+msgstr ""
+
+#: templates/portal/login.html:36
+msgid "Password:"
+msgstr ""
+
+#: templates/portal/login.html:39
+msgid "Login"
+msgstr ""
+
+#: templates/portal/login.html:41
+msgid "Forgot your password?"
+msgstr ""
+
+#: templates/privacy.html:13
 msgid "Last updated"
 msgstr "Ultimo aggiornamento"
 
-#: .\templates\privacy.html:17
-#, fuzzy
-#| msgid "Contact Us"
-msgid "Contact us"
-msgstr "Contattaci"
-
-#: .\templates\privacy.html:27
+#: templates/privacy.html:22
 msgid "On this page"
 msgstr "In questa pagina"
 
-#: .\templates\privacy.html:29
+#: templates/privacy.html:24
 msgid "1) Who we are"
 msgstr "1) Chi siamo"
 
-#: .\templates\privacy.html:30
+#: templates/privacy.html:25
 msgid "2) Data we collect"
 msgstr "2) Dati che raccogliamo"
 
-#: .\templates\privacy.html:31
+#: templates/privacy.html:26
 msgid "3) How we collect"
 msgstr "3) Come raccogliamo i dati"
 
-#: .\templates\privacy.html:32
+#: templates/privacy.html:27
 msgid "4) Purposes & legal bases"
 msgstr "4) Finalità e basi giuridiche"
 
-#: .\templates\privacy.html:33 .\templates\privacy.html:158
+#: templates/privacy.html:28 templates/privacy.html:153
 msgid "5) Cookies"
 msgstr "5) Cookie"
 
-#: .\templates\privacy.html:34 .\templates\privacy.html:168
+#: templates/privacy.html:29 templates/privacy.html:163
 msgid "6) Sharing your data"
 msgstr "6) Condivisione dei dati"
 
-#: .\templates\privacy.html:35 .\templates\privacy.html:182
+#: templates/privacy.html:30 templates/privacy.html:177
 msgid "7) International transfers"
 msgstr "7) Trasferimenti internazionali"
 
-#: .\templates\privacy.html:36 .\templates\privacy.html:192
+#: templates/privacy.html:31 templates/privacy.html:187
 msgid "8) Data retention"
 msgstr "8) Conservazione dei dati"
 
-#: .\templates\privacy.html:37 .\templates\privacy.html:207
+#: templates/privacy.html:32 templates/privacy.html:202
 msgid "9) Security"
 msgstr "9) Sicurezza"
 
-#: .\templates\privacy.html:38 .\templates\privacy.html:217
+#: templates/privacy.html:33 templates/privacy.html:212
 msgid "10) Your rights"
 msgstr "10) I tuoi diritti"
 
-#: .\templates\privacy.html:39 .\templates\privacy.html:236
+#: templates/privacy.html:34 templates/privacy.html:231
 msgid "11) Children’s privacy"
 msgstr "11) Privacy dei minori"
 
-#: .\templates\privacy.html:40 .\templates\privacy.html:246
+#: templates/privacy.html:35 templates/privacy.html:241
 msgid "12) Third-party links"
 msgstr "12) Link a siti di terzi"
 
-#: .\templates\privacy.html:41
+#: templates/privacy.html:36
 msgid "13) Changes"
 msgstr "13) Modifiche"
 
-#: .\templates\privacy.html:42
+#: templates/privacy.html:37
 msgid "14) Contact"
 msgstr "14) Contatti"
 
-#: .\templates\privacy.html:54
+#: templates/privacy.html:49
 msgid "1) Who we are (Data Controller)"
 msgstr "1) Chi siamo (Titolare del trattamento)"
 
-#: .\templates\privacy.html:55
+#: templates/privacy.html:50
 msgid "Controller"
 msgstr "Titolare"
 
-#: .\templates\privacy.html:56
+#: templates/privacy.html:51
 msgid "Website"
 msgstr "Sito web"
 
-#: .\templates\privacy.html:60
+#: templates/privacy.html:55
 msgid ""
 "We comply with UK GDPR and Data Protection Act 2018. If you are in the EEA, "
 "we may appoint an EU representative on request."
@@ -788,71 +854,71 @@ msgstr ""
 "Rispettiamo l’UK GDPR e il Data Protection Act 2018. Se ti trovi nello SEE, "
 "potremmo nominare un rappresentante nell’UE su richiesta."
 
-#: .\templates\privacy.html:68
+#: templates/privacy.html:63
 msgid "2) Personal data we collect"
 msgstr "2) Dati personali che raccogliamo"
 
-#: .\templates\privacy.html:70
+#: templates/privacy.html:65
 msgid "Identity & contact"
 msgstr "Identità e contatti"
 
-#: .\templates\privacy.html:70
+#: templates/privacy.html:65
 msgid "name, email, phone, address"
 msgstr "nome, email, telefono, indirizzo"
 
-#: .\templates\privacy.html:71
+#: templates/privacy.html:66
 msgid "Account (portal)"
 msgstr "Account (portale)"
 
-#: .\templates\privacy.html:71
+#: templates/privacy.html:66
 msgid "username, hashed password, roles"
 msgstr "username, password cifrata, ruoli"
 
-#: .\templates\privacy.html:72
+#: templates/privacy.html:67
 msgid "Course & booking"
 msgstr "Corsi e prenotazioni"
 
-#: .\templates\privacy.html:72
+#: templates/privacy.html:67
 msgid "class booked, dates/times, attendance, payment status"
 msgstr "corso prenotato, date/orari, presenze, stato dei pagamenti"
 
-#: .\templates\privacy.html:73
+#: templates/privacy.html:68
 msgid "Child participant (via parent/guardian)"
 msgstr "Partecipante minorenne (tramite genitore/tutore)"
 
-#: .\templates\privacy.html:73
+#: templates/privacy.html:68
 msgid "first name, age, special requirements, emergency contact"
 msgstr "nome, età, esigenze particolari, contatto di emergenza"
 
-#: .\templates\privacy.html:74
+#: templates/privacy.html:69
 msgid "Communications & preferences"
 msgstr "Comunicazioni e preferenze"
 
-#: .\templates\privacy.html:74
+#: templates/privacy.html:69
 msgid "messages, feedback, marketing opt-in/out"
 msgstr "messaggi, feedback, consensi/revoche marketing"
 
-#: .\templates\privacy.html:75
+#: templates/privacy.html:70
 msgid "Images & media (optional)"
 msgstr "Immagini e media (opzionale)"
 
-#: .\templates\privacy.html:75
+#: templates/privacy.html:70
 msgid "photos/video from events, only with consent where required"
 msgstr "foto/video di eventi, solo con consenso quando richiesto"
 
-#: .\templates\privacy.html:76
+#: templates/privacy.html:71
 msgid "Technical & usage"
 msgstr "Dati tecnici e di utilizzo"
 
-#: .\templates\privacy.html:76
+#: templates/privacy.html:71
 msgid "IP, device/browser, pages viewed, cookie IDs"
 msgstr "IP, dispositivo/browser, pagine visitate, identificativi cookie"
 
-#: .\templates\privacy.html:79
+#: templates/privacy.html:74
 msgid "Special category data"
 msgstr "Dati particolari"
 
-#: .\templates\privacy.html:80
+#: templates/privacy.html:75
 msgid ""
 "we do not intentionally collect special categories (e.g., health) except "
 "where you volunteer details for reasonable adjustments. In that case we rely "
@@ -862,11 +928,11 @@ msgstr ""
 "fornisca volontariamente informazioni per adeguamenti ragionevoli. In tal "
 "caso ci basiamo sul consenso esplicito o sugli interessi vitali."
 
-#: .\templates\privacy.html:88
+#: templates/privacy.html:83
 msgid "3) How we collect data"
 msgstr "3) Come raccogliamo i dati"
 
-#: .\templates\privacy.html:90
+#: templates/privacy.html:85
 msgid ""
 "Directly from you (forms, bookings, portal accounts, email/messages, media "
 "consent)"
@@ -874,121 +940,121 @@ msgstr ""
 "Direttamente da te (moduli, prenotazioni, account del portale, email/"
 "messaggi, consensi media)"
 
-#: .\templates\privacy.html:91
+#: templates/privacy.html:86
 msgid ""
 "Automatically via privacy-preserving logs when you browse our website/portal"
 msgstr ""
 "Automaticamente tramite log rispettosi della privacy quando navighi il "
 "nostro sito/portale"
 
-#: .\templates\privacy.html:92
+#: templates/privacy.html:87
 msgid ""
 "From third parties (e.g., payment providers, analytics, social platforms)"
 msgstr ""
 "Da terze parti (es. provider di pagamento, analytics, piattaforme social)"
 
-#: .\templates\privacy.html:100
+#: templates/privacy.html:95
 msgid "4) Why we use your data (purposes & legal bases)"
 msgstr "4) Perché usiamo i tuoi dati (finalità e basi giuridiche)"
 
-#: .\templates\privacy.html:105
+#: templates/privacy.html:100
 msgid "Purpose"
 msgstr "Finalità"
 
-#: .\templates\privacy.html:106
+#: templates/privacy.html:101
 msgid "Examples"
 msgstr "Esempi"
 
-#: .\templates\privacy.html:107
+#: templates/privacy.html:102
 msgid "Legal basis"
 msgstr "Base giuridica"
 
-#: .\templates\privacy.html:112
+#: templates/privacy.html:107
 msgid "Provide our services"
 msgstr "Fornire i nostri servizi"
 
-#: .\templates\privacy.html:113
+#: templates/privacy.html:108
 msgid "run classes, manage bookings/accounts, support"
 msgstr "gestire corsi, prenotazioni/account, assistenza"
 
-#: .\templates\privacy.html:114
+#: templates/privacy.html:109
 msgid "Contract"
 msgstr "Contratto"
 
-#: .\templates\privacy.html:117
+#: templates/privacy.html:112
 msgid "Communications"
 msgstr "Comunicazioni"
 
-#: .\templates\privacy.html:118
+#: templates/privacy.html:113
 msgid "enquiry replies, service messages (schedule changes)"
 msgstr "risposte alle richieste, avvisi di servizio (variazioni di orario)"
 
-#: .\templates\privacy.html:119
+#: templates/privacy.html:114
 msgid "Legitimate interests / Contract"
 msgstr "Interessi legittimi / Contratto"
 
-#: .\templates\privacy.html:122
+#: templates/privacy.html:117
 msgid "Marketing"
 msgstr "Marketing"
 
-#: .\templates\privacy.html:123
+#: templates/privacy.html:118
 msgid "newsletters, updates on classes/events"
 msgstr "newsletter, aggiornamenti su corsi/eventi"
 
-#: .\templates\privacy.html:124
+#: templates/privacy.html:119
 msgid "Consent / Legitimate interests (PECR-permitted)"
 msgstr "Consenso / Interessi legittimi (dove consentito da PECR)"
 
-#: .\templates\privacy.html:127
+#: templates/privacy.html:122
 msgid "Payments"
 msgstr "Pagamenti"
 
-#: .\templates\privacy.html:128
+#: templates/privacy.html:123
 msgid "processing via payment provider; tax records"
 msgstr "elaborazione tramite provider di pagamento; adempimenti fiscali"
 
-#: .\templates\privacy.html:129
+#: templates/privacy.html:124
 msgid "Contract / Legal obligation"
 msgstr "Contratto / Obbligo legale"
 
-#: .\templates\privacy.html:132
+#: templates/privacy.html:127
 msgid "Photos & media"
 msgstr "Foto e media"
 
-#: .\templates\privacy.html:133
+#: templates/privacy.html:128
 msgid "showcasing activities on site/socials"
 msgstr "raccontare le attività sul sito/sui social"
 
-#: .\templates\privacy.html:134
+#: templates/privacy.html:129
 msgid "Consent"
 msgstr "Consenso"
 
-#: .\templates\privacy.html:137
+#: templates/privacy.html:132
 msgid "Safety & compliance"
 msgstr "Sicurezza e conformità"
 
-#: .\templates\privacy.html:138
+#: templates/privacy.html:133
 msgid "fraud prevention, safeguarding, legal claims"
 msgstr "prevenzione frodi, tutela, gestione di azioni legali"
 
-#: .\templates\privacy.html:139
+#: templates/privacy.html:134
 msgid "Legitimate interests / Legal obligation / Vital interests"
 msgstr "Interessi legittimi / Obbligo legale / Interessi vitali"
 
-#: .\templates\privacy.html:142
+#: templates/privacy.html:137
 msgid "Analytics & improvement"
 msgstr "Analisi e miglioramento"
 
-#: .\templates\privacy.html:143
+#: templates/privacy.html:138
 msgid "privacy-preserving, cookieless measurement to improve the site"
 msgstr ""
 "misurazioni senza cookie e rispettose della privacy per migliorare il sito"
 
-#: .\templates\privacy.html:144
+#: templates/privacy.html:139
 msgid "Legitimate interests"
 msgstr "Interessi legittimi"
 
-#: .\templates\privacy.html:150
+#: templates/privacy.html:145
 msgid ""
 "Where we rely on consent, you may withdraw it at any time. Where we rely on "
 "legitimate interests, we balance our interests with your rights and "
@@ -998,7 +1064,7 @@ msgstr ""
 "basiamo sugli interessi legittimi, bilanciamo i nostri interessi con i tuoi "
 "diritti e le tue aspettative."
 
-#: .\templates\privacy.html:160
+#: templates/privacy.html:155
 msgid ""
 "We do not use cookies on this website. If this changes, we will update this "
 "page and request consent where required."
@@ -1006,44 +1072,44 @@ msgstr ""
 "Non utilizziamo cookie su questo sito web. Se ciò dovesse cambiare, "
 "aggiorneremo questa pagina e richiederemo il consenso ove necessario."
 
-#: .\templates\privacy.html:169
+#: templates/privacy.html:164
 msgid "We share personal data only when necessary, with:"
 msgstr "Condividiamo i dati personali solo quando necessario, con:"
 
-#: .\templates\privacy.html:171
+#: templates/privacy.html:166
 msgid "Service providers (processors)"
 msgstr "Fornitori di servizi (responsabili del trattamento)"
 
-#: .\templates\privacy.html:171
+#: templates/privacy.html:166
 msgid "hosting, email delivery, cloud media, analytics, payments, forms"
 msgstr ""
 "hosting, invio email, archiviazione cloud, analytics, pagamenti, moduli"
 
-#: .\templates\privacy.html:171
+#: templates/privacy.html:166
 msgid "they act on our instructions and keep it secure"
 msgstr "operano su nostre istruzioni e mantengono i dati sicuri"
 
-#: .\templates\privacy.html:172
+#: templates/privacy.html:167
 msgid "Legal/compliance"
 msgstr "Autorità e conformità"
 
-#: .\templates\privacy.html:172
+#: templates/privacy.html:167
 msgid "regulators, law enforcement, courts or advisors when required"
 msgstr "autorità, forze dell’ordine, tribunali o consulenti quando richiesto"
 
-#: .\templates\privacy.html:173
+#: templates/privacy.html:168
 msgid "Business changes"
 msgstr "Operazioni societarie"
 
-#: .\templates\privacy.html:173
+#: templates/privacy.html:168
 msgid "reorganisation/transfer under appropriate safeguards"
 msgstr "riorganizzazione/trasferimento con adeguate garanzie"
 
-#: .\templates\privacy.html:175
+#: templates/privacy.html:170
 msgid "We do not sell your personal data."
 msgstr "Non vendiamo i tuoi dati personali."
 
-#: .\templates\privacy.html:184
+#: templates/privacy.html:179
 msgid ""
 "Where providers are outside the UK/EEA, we use adequacy decisions, Standard "
 "Contractual Clauses (SCCs) with safeguards, or other lawful mechanisms."
@@ -1052,37 +1118,37 @@ msgstr ""
 "adeguatezza, Clausole Contrattuali Standard (SCC) con garanzie o altri "
 "meccanismi leciti."
 
-#: .\templates\privacy.html:194
+#: templates/privacy.html:189
 msgid "Accounts & booking records: up to 6 years (tax/audit)"
 msgstr ""
 "Account e registrazioni di prenotazione: fino a 6 anni (fisco/revisioni)"
 
-#: .\templates\privacy.html:195
+#: templates/privacy.html:190
 msgid "Marketing subscriptions: until you unsubscribe or after inactivity"
 msgstr ""
 "Iscrizioni marketing: fino alla disiscrizione o dopo un periodo di inattività"
 
-#: .\templates\privacy.html:196
+#: templates/privacy.html:191
 msgid "Enquiry emails/messages: 18–24 months"
 msgstr "Email/messaggi di richiesta: 18–24 mesi"
 
-#: .\templates\privacy.html:197
+#: templates/privacy.html:192
 msgid "Event photos/media: until consent is withdrawn or as stated at capture"
 msgstr ""
 "Foto/media di eventi: fino a revoca del consenso o come indicato al momento "
 "della raccolta"
 
-#: .\templates\privacy.html:198
+#: templates/privacy.html:193
 msgid "Technical logs: up to 12 months (longer if needed for security)"
 msgstr ""
 "Log tecnici: fino a 12 mesi (più a lungo se necessario per la sicurezza)"
 
-#: .\templates\privacy.html:200
+#: templates/privacy.html:195
 msgid "We will anonymise or securely delete data when no longer needed."
 msgstr ""
 "Anonimizzeremo o elimineremo in modo sicuro i dati quando non più necessari."
 
-#: .\templates\privacy.html:209
+#: templates/privacy.html:204
 #, fuzzy, python-format
 #| msgid ""
 #| "We use appropriate technical and organisational measures (HTTPS, access "
@@ -1097,51 +1163,51 @@ msgstr ""
 "accesso, backup). Nessun metodo è sicuro al 100%; miglioriamo continuamente "
 "le nostre tutele."
 
-#: .\templates\privacy.html:219
+#: templates/privacy.html:214
 msgid "Access a copy of your data"
 msgstr "Accedere a una copia dei tuoi dati"
 
-#: .\templates\privacy.html:220
+#: templates/privacy.html:215
 msgid "Rectify inaccuracies"
 msgstr "Rettificare dati inesatti"
 
-#: .\templates\privacy.html:221
+#: templates/privacy.html:216
 msgid "Erase your data ('right to be forgotten')"
 msgstr "Cancellare i tuoi dati (\"diritto all’oblio\")"
 
-#: .\templates\privacy.html:222
+#: templates/privacy.html:217
 msgid "Restrict certain processing"
 msgstr "Limitare alcuni trattamenti"
 
-#: .\templates\privacy.html:223
+#: templates/privacy.html:218
 msgid ""
 "Object to processing based on legitimate interests or to direct marketing"
 msgstr ""
 "Opporsi ai trattamenti basati su interessi legittimi o al marketing diretto"
 
-#: .\templates\privacy.html:224
+#: templates/privacy.html:219
 msgid "Data portability"
 msgstr "Portabilità dei dati"
 
-#: .\templates\privacy.html:225
+#: templates/privacy.html:220
 msgid "Withdraw consent at any time where processing is based on consent"
 msgstr ""
 "Revocare il consenso in qualsiasi momento quando il trattamento si basa sul "
 "consenso"
 
-#: .\templates\privacy.html:228
+#: templates/privacy.html:223
 msgid "To exercise your rights, contact us at"
 msgstr "Per esercitare i tuoi diritti, contattaci a"
 
-#: .\templates\privacy.html:228
+#: templates/privacy.html:223
 msgid ""
-"You may also complain to the Information Commissioner’s Office (ICO) at "
-"ico.org.uk."
+"You may also complain to the Information Commissioner’s Office (ICO) at ico."
+"org.uk."
 msgstr ""
 "Puoi anche presentare un reclamo all’Information Commissioner’s Office (ICO) "
 "su ico.org.uk."
 
-#: .\templates\privacy.html:238
+#: templates/privacy.html:233
 msgid ""
 "Our classes may be aimed at children, but our website/portal are intended "
 "for parents/guardians. We do not knowingly collect children’s data online "
@@ -1151,7 +1217,7 @@ msgstr ""
 "destinato a genitori/tutori. Non raccogliamo consapevolmente dati dei minori "
 "online senza il consenso appropriato."
 
-#: .\templates\privacy.html:248
+#: templates/privacy.html:243
 msgid ""
 "Our site may link to third-party websites or services. Their privacy "
 "practices apply; please review their policies."
@@ -1159,11 +1225,11 @@ msgstr ""
 "Il nostro sito può rimandare a siti o servizi di terzi. Si applicano le loro "
 "pratiche di privacy; ti invitiamo a consultare le loro informative."
 
-#: .\templates\privacy.html:256
+#: templates/privacy.html:251
 msgid "13) Changes to this policy"
 msgstr ""
 
-#: .\templates\privacy.html:258
+#: templates/privacy.html:253
 msgid ""
 "We may update this policy from time to time. The current version is posted "
 "on this page with the effective date."
@@ -1171,15 +1237,21 @@ msgstr ""
 "Possiamo aggiornare periodicamente questa informativa. La versione corrente "
 "è pubblicata in questa pagina con la data di efficacia."
 
-#: .\templates\privacy.html:266
+#: templates/privacy.html:261
 msgid "14) Contact us"
 msgstr "14) Contattaci"
 
-#: .\templates\privacy.html:274
+#: templates/privacy.html:270
+#, fuzzy
+#| msgid "Contact Us"
+msgid "Contact us"
+msgstr "Contattaci"
+
+#: templates/privacy.html:275
 msgid "Back to top"
 msgstr "Torna su"
 
-#: .\templates\schedule\calendar.html:15
+#: templates/schedule/calendar.html:14
 msgid ""
 "To explore what's happening at <b class=\"red\">The English Studio</b> "
 "simply hover or tap any emoji on the calendar."
@@ -1187,7 +1259,7 @@ msgstr ""
 "Per scoprire cosa succede a <b class=\"red\">The English Studio</b>, passa "
 "il mouse o tocca una qualsiasi emoji nel calendario."
 
-#: .\templates\schedule\calendar.html:18
+#: templates/schedule/calendar.html:17
 msgid ""
 "We host regular group sessions as well as one-off event's on special dates "
 "throughout the year; from seasonal celebrations to creative workshops. Be "
@@ -1201,11 +1273,11 @@ msgstr ""
 "English, preparazione IELTS e lezioni private possono essere organizzati su "
 "misura per te."
 
-#: .\templates\schedule\calendar.html:20
+#: templates/schedule/calendar.html:19
 msgid "Ready to join an event?"
 msgstr "Pronto a partecipare a un evento?"
 
-#: .\templates\schedule\calendar.html:22
+#: templates/schedule/calendar.html:21
 msgid ""
 "Use the form on our contact page to book your spot. We are happy to help "
 "with anything from bookings to general enquiries."
@@ -1213,42 +1285,53 @@ msgstr ""
 "Usa il modulo nella nostra pagina dei contatti per prenotare il tuo posto. "
 "Siamo felici di aiutarti sia per le prenotazioni che per domande generiche."
 
-#: .\templates\schedule\calendar.html:26
+#: templates/schedule/calendar.html:25
 msgid "Mon"
 msgstr ""
 
-#: .\templates\schedule\calendar.html:27
+#: templates/schedule/calendar.html:26
 msgid "Tue"
 msgstr ""
 
-#: .\templates\schedule\calendar.html:28
+#: templates/schedule/calendar.html:27
 msgid "Wed"
 msgstr ""
 
-#: .\templates\schedule\calendar.html:29
+#: templates/schedule/calendar.html:28
 msgid "Thu"
 msgstr ""
 
-#: .\templates\schedule\calendar.html:30
+#: templates/schedule/calendar.html:29
 msgid "Fri"
 msgstr ""
 
-#: .\templates\schedule\calendar.html:31
+#: templates/schedule/calendar.html:30
 msgid "Sat"
 msgstr ""
 
-#: .\templates\schedule\calendar.html:32
+#: templates/schedule/calendar.html:31
 msgid "Sun"
 msgstr ""
 
-#: .\templates\schedule\calendar.html:66
+#: templates/schedule/calendar.html:65
 msgid "MONTH"
 msgstr "MESE"
 
-#: .\templates\schedule\calendar.html:72
+#: templates/schedule/calendar.html:71
 msgid "BOOK NOW"
 msgstr "PRENOTA ORA"
 
+#~ msgid "Price from €22/90 mins."
+#~ msgstr "Prezzo a partire da €22/90 min."
+
+#~ msgid "€27/60 mins children"
+#~ msgstr "€27/60 min bambini"
+
+#~ msgid "€32/60 mins adults"
+#~ msgstr "€32/60 min adulti"
+
+#~ msgid "€32/60 mins"
+#~ msgstr "€32/60 min"
+
 #~ msgid "Contact Me"
 #~ msgstr "Contattami"
-

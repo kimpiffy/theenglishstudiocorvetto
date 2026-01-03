@@ -111,21 +111,24 @@
           <span></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto text-uppercase fw-bold">
-            <li class="nav-item">
-              <a class="nav-link navy primaryfont focusstyle" href="{% url 'index' %}#about">{% trans "About" %}</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link navy primaryfont focusstyle" href="{% url 'schedule' %}">{% trans "Schedule" %}</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link navy primaryfont focusstyle" href="{% url 'blog_list' %}">{% trans "Blog" %}</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link navy primaryfont focusstyle" href="{% url 'contact' %}">{% trans "Contact" %}</a>
-            </li>
-          </ul>
+<ul class="navbar-nav ms-auto text-uppercase fw-bold">
+  <li class="nav-item">
+    <a class="nav-link navy primaryfont focusstyle" href="{% url 'index' %}#about">{% trans "About" %}</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link navy primaryfont focusstyle" href="{% url 'schedule' %}">{% trans "Schedule" %}</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link navy primaryfont focusstyle" href="{% url 'gallery' %}">{% trans "Gallery" %}</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link navy primaryfont focusstyle" href="{% url 'blog_list' %}">{% trans "Blog" %}</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link navy primaryfont focusstyle" href="{% url 'contact' %}">{% trans "Contact" %}</a>
+  </li>
+</ul>
+
 
           <div class="ms-3 locale_select">
             <form action="{% url 'set_language' %}" method="post" style="display:inline;">
@@ -191,8 +194,9 @@
       <div class="col-12 col-lg-3 d-flex flex-column align-items-center justify-content-center body-text off-white order-4">
         <div class="d-flex flex-wrap flex-row flex-lg-column align-items-center justify-content-center text-center">
           <a href="{% url 'index' %}#about" class="focusstyle px-1 body-text off-white">{% trans "About" %}</a>
-          <a href="{% url 'blog_list' %}" class="focusstyle px-1 body-text off-white">{% trans "Blog" %}</a>
           <a href="{% url 'schedule' %}" class="focusstyle px-1 body-text off-white">{% trans "Schedule" %}</a>
+          <a href="{% url 'gallery' %}" class="focusstyle px-1 body-text off-white">{% trans "Gallery" %}</a>
+          <a href="{% url 'blog_list' %}" class="focusstyle px-1 body-text off-white">{% trans "Blog" %}</a>
           <a href="{% url 'contact' %}" class="focusstyle px-1 body-text off-white">{% trans "Contact" %}</a>
           <a href="{% url 'portal:portal_login' %}" class="focusstyle px-1 body-text off-white">{% trans "Staff" %}</a>
         </div>
