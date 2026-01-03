@@ -97,38 +97,35 @@
 
   <header>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg px-4 py-3">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="{% url 'index' %}">
-          <img src="{% static 'compressed/logofull.webp' %}" class="nav_img"
-               alt="{% trans 'The English Studio logo' %}"
-               aria-label="{% trans 'The English Studio Logo - Navigate Home' %}">
-        </a>
+  <button class="navbar-toggler hamburger" type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="navbar toggler">
+  <span></span>
+  <span></span>
+  <span></span>
+</button>
 
-        <button class="navbar-toggler hamburger" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="navbar toggler" aria-controls="navbarNav" aria-expanded="false">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-
-<ul class="navbar-nav ms-auto text-uppercase fw-bold">
-  <li class="nav-item">
-    <a class="nav-link navy primaryfont focusstyle" href="{% url 'index' %}#about">{% trans "About" %}</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link navy primaryfont focusstyle" href="{% url 'schedule' %}">{% trans "Schedule" %}</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link navy primaryfont focusstyle" href="{% url 'gallery' %}">{% trans "Gallery" %}</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link navy primaryfont focusstyle" href="{% url 'blog_list' %}">{% trans "Blog" %}</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link navy primaryfont focusstyle" href="{% url 'contact' %}">{% trans "Contact" %}</a>
-  </li>
-</ul>
-
+<div class="collapse navbar-collapse" id="navbarNav">
+  <ul class="navbar-nav ms-auto text-uppercase fw-bold">
+    <li class="nav-item">
+      <a class="nav-link navy primaryfont focusstyle" href="{% url 'index' %}#about">{% trans "About" %}</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link navy primaryfont focusstyle" href="{% url 'schedule' %}">{% trans "Schedule" %}</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link navy primaryfont focusstyle" href="{% url 'gallery' %}">{% trans "Gallery" %}</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link navy primaryfont focusstyle" href="{% url 'blog_list' %}">{% trans "Blog" %}</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link navy primaryfont focusstyle" href="{% url 'contact' %}">{% trans "Contact" %}</a>
+    </li>
+  </ul>
 
           <div class="ms-3 locale_select">
             <form action="{% url 'set_language' %}" method="post" style="display:inline;">
