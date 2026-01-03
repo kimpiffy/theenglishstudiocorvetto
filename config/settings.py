@@ -31,7 +31,9 @@ if not DEBUG:
     SECURE_HSTS_PRELOAD = True
 
 
+# ──────────────────────────────────────────────────────────────────────────────
 # Domains
+# ──────────────────────────────────────────────────────────────────────────────
 DEFAULT_ALLOWED = [
     "theenglishstudiocorvetto.onrender.com",
     "theenglishstudiocorvetto.com",
@@ -39,14 +41,22 @@ DEFAULT_ALLOWED = [
     "localhost",
     "127.0.0.1",
 ]
-ALLOWED_HOSTS = (
-    list({
-        *DEFAULT_ALLOWED,
-        *os.getenv("ALLOWED_HOSTS", "").split(","),
-    })
-    if os.getenv("ALLOWED_HOSTS")
-    else DEFAULT_ALLOWED
-)
+
+extra_hosts = [
+    h.strip()
+    for h in os.getenv("ALLOWED_HOSTS", "").split(",")
+    if h.strip()
+]
+
+ALLOWED_HOSTS = list({*DEFAULT_ALLOWED, *extra_hosts})
+
+# Allow Codespaces forwarded domain in DEBUG only
+if DEBUG:
+    codespace_host = os.getenv("CODESPACE_HOST", "").strip()
+    if codespace_host:
+        ALLOWED_HOSTS.append(codespace_host)
+    ALLOWED_HOSTS.append(".app.github.dev")
+
 
 # Trust Render’s proxy so reset links are HTTPS and hostnames are correct
 USE_X_FORWARDED_HOST = True
@@ -80,7 +90,9 @@ INSTALLED_APPS = [
     "main",
     "contact",
     "blog",
-    "schedule",
+    # Disable schedule in Codespaces/local preview
+    *([] if os.getenv("DISABLE_SCHEDULE", "")
+      .lower() == "true" else ["schedule"]),
     "cloudinary",
     "cloudinary_storage",
     "ckeditor",
@@ -132,12 +144,25 @@ MESSAGE_TAGS = {
     messages.ERROR: "danger",
 }
 
+
 # ──────────────────────────────────────────────────────────────────────────────
 # Database
 # ──────────────────────────────────────────────────────────────────────────────
-if os.getenv("RENDER") and dj_database_url:
-    # Render sets DATABASE_URL – use it if present
+
+# 1) Local/dev override (Codespaces etc.)
+if os.getenv("USE_SQLITE", "").lower() == "true":
+    DATABASES = {
+        "default": {
+            "ENGINE": "django.db.backends.sqlite3",
+            "NAME": BASE_DIR / "db.sqlite3",
+        }
+    }
+
+# 2) Render / production
+elif os.getenv("RENDER") and os.getenv("DATABASE_URL") and dj_database_url:
     DATABASES = {"default": dj_database_url.config(conn_max_age=600)}
+
+# 3) Default local Postgres
 else:
     DATABASES = {
         "default": {
@@ -149,6 +174,13 @@ else:
             "PORT": os.getenv("DB_PORT", "5432"),
         }
     }
+
+# Safety: refuse dangerous combos
+if DEBUG and os.getenv("RENDER"):
+    raise RuntimeError("DEBUG=True but RENDER is set. Refusing to run.")
+if DEBUG and os.getenv("DATABASE_URL"):
+    raise RuntimeError("DEBUG=True but DATABASE_URL is set. Refusing to run.")
+
 
 # ──────────────────────────────────────────────────────────────────────────────
 # Passwords / Auth

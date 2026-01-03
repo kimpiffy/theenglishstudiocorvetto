@@ -14,13 +14,12 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
-
 from django.contrib import admin
 from django.urls import path, include
+from django.views.generic import TemplateView
 from django.conf import settings
 from django.conf.urls.static import static
 from django.conf.urls.i18n import i18n_patterns
-
 
 urlpatterns = [
     # Language switching (keep this outside)
@@ -29,6 +28,11 @@ urlpatterns = [
 
 urlpatterns += i18n_patterns(
     path("contact/", include("contact.urls")),
+    path(
+        "gallery/",
+        TemplateView.as_view(template_name="gallery.html"),
+        name="gallery",
+    ),
     path('admin/', admin.site.urls),
     path('', include('main.urls')),
     path('schedule/', include('schedule.urls')),
@@ -36,6 +40,7 @@ urlpatterns += i18n_patterns(
     path('blog/', include('blog.urls')),
     path('flyers/', include('flyers.urls')),
 )
+
 
 # Custom error handlers
 handler404 = "main.views.not_found"
