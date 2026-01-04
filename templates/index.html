@@ -10,39 +10,55 @@
   <div class="carousel-background-overlay"></div>
   <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
+
       <div class="carousel-item active position-relative">
         <img src="{% static 'compressed/afterschoolclub.webp' %}" class="d-block w-100 cimage" alt="...">
         <div class="position-absolute top-0 start-0 text-white p-4 carouseloverlay">
-          <h3 class="primaryfont smallerheader">{% trans "After School Club" %}</h3>
-          <p class="body-text smallertext">{% trans "Making friends and learning English is so fun!" %}</p>
+          <h3 class="primaryfont smallerheader">{% trans "AFTER SCHOOL CLUBS" %}</h3>
+          <p class="body-text smallertext">
+            {% trans "An environment where children feel truly excited to learn English!" %}
+          </p>
           <a href="#classes1" class="btn smallerbtn btn-red primaryfont">{% trans "Learn More" %}</a>
         </div>
       </div>
+
       <div class="carousel-item position-relative">
         <img src="{% static 'compressed/businessandgeneral.webp' %}" class="d-block w-100 cimage" alt="...">
         <div class="position-absolute top-0 start-0 text-white p-4 carouseloverlay">
-          <h3 class="primaryfont smallerheader">{% trans "Business English" %}</h3>
-          <p class="body-text smallertext">{% trans "Study to access a world of great opportunities." %}</p>
-            <a href="#classes2" class="btn smallerbtn btn-red primaryfont">{% trans "Learn More" %}</a>
+          <h3 class="primaryfont smallerheader">{% trans "BUSINESS ENGLISH" %}</h3>
+          <p class="body-text smallertext">
+            {% trans "Access to a career of opportunities is only one lesson away." %}
+          </p>
+          <a href="#classes2" class="btn smallerbtn btn-red primaryfont">{% trans "Learn More" %}</a>
         </div>
       </div>
+
       <div class="carousel-item position-relative">
         <img src="{% static 'compressed/privatelessons.webp' %}" class="d-block w-100 cimage" alt="...">
         <div class="position-absolute top-0 start-0 text-white p-4 carouseloverlay">
-          <h3 class="primaryfont smallerheader">{% trans "Private Tutoring" %}</h3>
-          <p class="body-text smallertext">{% trans "Personalized support to help you reach your goals." %}</p>
+          <h3 class="primaryfont smallerheader">{% trans "ONE-ON-ONE’S" %}</h3>
+          <p class="body-text smallertext">
+            {% trans "Bespoke lessons designed to help you gain your confidence." %}
+          </p>
           <a href="#classes3" class="btn smallerbtn btn-red primaryfont">{% trans "Learn More" %}</a>
         </div>
       </div>
+
       <div class="carousel-item position-relative">
         <img src="{% static 'compressed/studyenglish.webp' %}" class="d-block w-100 cimage" alt="...">
         <div class="position-absolute top-0 start-0 text-white p-4 carouseloverlay" style="max-width: 40%;">
-          <h3 class="primaryfont smallerheader">{% trans "IELTS Test Preps" %}</h3>
-          <p class="body-text smallertext">{% trans "Feel prepared to reach your highest potential." %}</p>
+          <h3 class="primaryfont smallerheader">{% trans "TEST PREPS" %}</h3>
+          <p class="body-text smallertext">
+            {% trans "Be prepared to unlock your potential to reach your academic goals." %}
+          </p>
           <a href="#classes4" class="btn smallerbtn btn-red primaryfont">{% trans "Learn More" %}</a>
         </div>
       </div>
+
     </div>
+  </div>
+</div>
+
     <button class="carousel-control-prev" type="button" aria-label="previous" data-bs-target="#heroCarousel" data-bs-slide="prev">
       <span class="carousel-control-prev-icon"></span>
     </button>
@@ -54,7 +70,7 @@
 
 <!-- Main Content -->
   <section id="about" class="container-fluid py-4 text-center">
-    <img src="{% static 'compressed/door.webp' %}" class="d-inline-block mb-3" style="max-width: 100px;" alt="Learn English with Confidence">
+    <img src="{% static 'compressed/door.webp' %}" class="rounded-circle mb-3 teacher_pic" alt="Learn English with Confidence">
     <img src="{% static 'compressed/leannepic.webp' %}" class="rounded-circle mb-3 teacher_pic" alt="{% trans 'Teacher' %}">
     <h1 class="navy primaryfont headersize">{% trans "Hi, I'm Leanne!" %}</h1>
    <p class="navy justify-text aboutp body-text mt-2 px-4">
@@ -90,7 +106,7 @@
   <div class="card h-100">
     <img src="{% static 'compressed/apple.webp' %}" class="card-img-top icon-presets mt-3" alt="...">
     <div class="card-body">
-      <h3 class="card-title red body-text text-center">{% trans "AFTER SCHOOL CLUB" %}</h3>
+      <h3 class="card-title red body-text text-center">{% trans "AFTER SCHOOL CLUBS" %}</h3>
       <p class="card-text navy body-text">
         {% trans "Join us after school for the perfect environment where your kids can learn English in a fun and exciting way! Each session is packed with energy and creativity, helping children consolidate grammar in refreshing, practical ways — turning what they learn in school into real, spoken, and written English." %}
       </p>
@@ -136,7 +152,7 @@
 <!-- Adults -->
 <div class="col-md-6" id="classes6">
   <div class="card h-100">
-    <img src="{% static 'compressed/book.webp' %}" class="card-img-top alt-icon-preset2 mt-3" alt="...">
+    <img src="{% static 'compressed/book.webp' %}" class="card-img-top alt-icon-preset mt-3" alt="...">
     <div class="card-body">
       <h3 class="card-title red body-text text-center">{% trans "ADULTS" %}</h3>
 
@@ -162,7 +178,7 @@
 <!-- Business English -->
 <div class="col-md-6" id="classes2">
   <div class="card h-100">
-    <img src="{% static 'compressed/briefcase.webp' %}" class="card-img-top alt-icon-preset mt-3" alt="...">
+    <img src="{% static 'compressed/briefcase.webp' %}" class="card-img-top alt-icon-preset2 mt-3" alt="...">
     <div class="card-body">
       <h3 class="card-title red body-text text-center">{% trans "BUSINESS ENGLISH" %}</h3>
 
@@ -198,7 +214,7 @@
     </div>
   </div>
 </div>
-  
+
 
     <div class="text-center headertext mt-4">
       <a href="{% url 'contact' %}" class="btn btn-red primaryfont">{% trans "CONTACT US" %}</a>
