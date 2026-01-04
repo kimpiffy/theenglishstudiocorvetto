@@ -573,165 +573,93 @@ msgstr ""
 msgid "What We Offer"
 msgstr "Cosa Offriamo"
 
+# --- START UPDATED INDEX CARDS ---
+
 #: templates/index.html:92
 msgid "AFTER SCHOOL CLUB"
-msgstr "DOPO SCUOLA"
+msgstr "DOPOSCUOLA"
 
 #: templates/index.html:93
-msgid ""
-"Come and join us after school for 90 mins of full immersion English, with "
-"our native mother tongue teacher who provides exciting and fun activities "
-"for primary school children."
-msgstr ""
-"Venite a trovarci dopo la scuola per 90 minuti di full immersion in inglese,"
-"con la nostra insegnante madrelingua che offre attività stimolanti e "
-"divertenti per i bambini della scuola primaria."
+msgid "Join us after school for the perfect environment where your kids can learn English in a fun and exciting way! Each session is packed with energy and creativity, helping children consolidate grammar in refreshing, practical ways — turning what they learn in school into real, spoken, and written English."
+msgstr "Unisciti a noi dopo scuola per offrire ai tuoi bambini l’ambiente perfetto dove imparare l’inglese in modo divertente ed entusiasmante! Ogni lezione è piena di energia e creatività, aiutando i bambini a consolidare la grammatica in modi pratici e stimolanti — trasformando ciò che imparano a scuola in inglese parlato e scritto reale."
 
 #: templates/index.html:94
-msgid ""
-"Expose your children to the world and help them acquire fundamental language "
-"skills at a young age, preparing them for their best possible future."
-msgstr ""
-"Esponete i vostri bambini al mondo e aiutateli ad acquisire "
-"competenzelinguistiche fondamentali fin da piccoli, preparandoli per il loro "
-"futuro migliore."
-
-#: templates/index.html:95
-#, fuzzy
-#| msgid "Price discussed on request."
-msgid "Price on request."
-msgstr "Prezzo da concordare su richiesta."
-
-#: templates/index.html:95
-msgid "Up to 8 children for each session."
-msgstr "Fino a 8 bambini per sessione."
+msgid "Expose your children to the world and help them acquire fundamental language skills at a young age, preparing them for their best possible future."
+msgstr "Esporre i bambini al mondo e aiutarli ad acquisire competenze linguistiche fondamentali fin da piccoli li prepara al loro futuro migliore."
 
 #: templates/index.html:105
 msgid "TEENS"
 msgstr "TEENS"
 
 #: templates/index.html:106
-msgid ""
-"English lessons tailored to all your needs. Our professionally trained and "
-"well-experienced teacher can help you define what you are looking for and "
-"together, we can reach your goals."
-msgstr ""
-"Lezioni di inglese personalizzate per tutte le tue esigenze. Il nostro "
-"insegnante, qualificato e congrande esperienza, può aiutarti a definire ciò "
-"che stai cercando e, insieme, possiamo raggiungere ituoi obiettivi."
+msgid "One-on-one or group lessons available for teens seeking extra academic support."
+msgstr "Lezioni individuali o di gruppo disponibili per adolescenti che desiderano supporto extra nello studio."
 
 #: templates/index.html:107
-msgid ""
-"Imagine a life where you are fluent in English. If you can imagine it, we "
-"can achieve it."
-msgstr ""
-"Immagina una vita in cui parli fluentemente l'inglese.Se riesci a "
-"immaginarlo, noi possiamo realizzarlo."
-
-#: templates/index.html:109
-#, fuzzy
-#| msgid "Price discussed on request."
-msgid "Price discussed on request"
-msgstr "Prezzo da concordare su richiesta."
+msgid "With an excellent academic record, our teacher is confident she can use creative methods to help you reach your goals. Lessons are designed not only to help you fully understand grammar, but also to find practical, relatable ways to apply the rules you learn at school in your daily life. Every lesson helps you elevate your English and get closer to meeting your academic needs — one lesson at a time."
+msgstr "Con un eccellente curriculum accademico, la nostra insegnante è sicura di poter usare metodi creativi per aiutarti a raggiungere i tuoi obiettivi. Le lezioni sono progettate non solo per farti comprendere appieno la grammatica, ma anche per mostrarti modi pratici e concreti per applicare le regole che impari a scuola nella vita quotidiana. Ogni lezione ti aiuta a migliorare il tuo inglese e ad avvicinarti ai tuoi obiettivi accademici — una lezione alla volta."
 
 #: templates/index.html:119
-#, fuzzy
-#| msgid "TEST PREPS"
 msgid "TEST PREP"
-msgstr "TEST PREPS"
+msgstr "TEST PREP"
 
 #: templates/index.html:120
-msgid ""
-"Specialising in IELTS test prep, learn all the tips and tricks you need in "
-"order to achieve the score of your dreams!"
-msgstr ""
-"Specializzati nella preparazione al test IELTS, scopri tutti i trucchi e i "
-"consigli necessari perraggiungere il punteggio dei tuoi sogni!"
+msgid "Comprehensive lessons covering all academic bases! What better place to prepare for British Council exams than with a native British teacher with an excellent academic record?"
+msgstr "Lezioni complete che coprono tutti gli aspetti accademici! Che posto migliore per prepararsi agli esami del British Council se non con un’insegnante madrelingua britannica con un eccellente curriculum accademico?"
 
 #: templates/index.html:121
-msgid ""
-"Our teacher has an excellent record in helping students realise their goals "
-"through her outstanding understanding of the difficult exam and how to "
-"navigate those high band scores."
-msgstr ""
-"La nostra insegnante vanta un ha un'eccellente esperienza nell'aiutare gli "
-"studenti a raggiungere i loro obiettivi graziealla sua straordinaria "
-"comprensione di questo difficile e di come gestire punteggi elevati."
-
-#: templates/index.html:123 templates/index.html:136 templates/index.html:150
-#: templates/index.html:166
-msgid "Price discussed on request."
-msgstr "Prezzo da concordare su richiesta."
+msgid "Our teacher knows all the tips and tricks to help you achieve the top marks you need to reach your target score! Lessons are personalised to your strengths and weaknesses, giving you the confidence, strategies, and practice to succeed one step at a time."
+msgstr "La nostra insegnante conosce tutti i trucchi per aiutarti a ottenere i voti migliori e raggiungere il punteggio che desideri! Le lezioni sono personalizzate in base ai tuoi punti di forza e alle tue aree di miglioramento, offrendoti sicurezza, strategie e pratica per avere successo un passo alla volta."
 
 #: templates/index.html:133
 msgid "ADULTS"
 msgstr "ADULTI"
 
 #: templates/index.html:134
-msgid ""
-"Whether you want to rent our cozy space for a party, or if you want to work "
-"together to plan your child’s birthday party of their dreams, send us a "
-"message to see how you can make their dream your reality."
-msgstr ""
-"Che tu voglia affittare il nostro accogliente spazio per una festa o che tu "
-"voglia collaborare all'organizzazione della festa di compleanno dei sogni di "
-"tuo figlio, inviaci un messaggio per scoprire come possiamo trasformare il "
-"suo sogno in realtà."
+msgid "English for yourself — discover how our bespoke lessons can transform your journey."
+msgstr "Inglese per te — scopri come le nostre lezioni su misura possono trasformare il tuo percorso."
+
+#: templates/index.html:135
+msgid "Learn English in a way you’ve never experienced before: have fun, engage fully, and unlock your potential. Our teacher has all the tools to help you come out of your shell and connect the grammar ingrained in your mind to produce beautifully spoken and written English."
+msgstr "Impara l’inglese in un modo che non hai mai sperimentato prima: divertiti, partecipa attivamente e libera il tuo potenziale. La nostra insegnante ha tutti gli strumenti per aiutarti a uscire dal tuo guscio e collegare la grammatica che hai già assimilato alla produzione di un inglese parlato e scritto in modo chiaro e naturale."
+
+#: templates/index.html:136
+msgid "Don’t worry — our school is a judgement-free space where effort is always praised, and our goal is simple: to help you feel confident in yourself and your English."
+msgstr "Non preoccuparti — la nostra scuola è uno spazio senza giudizi, dove ogni impegno viene sempre apprezzato. Il nostro obiettivo è semplice: aiutarti a sentirti sicuro di te e del tuo inglese."
+
+#: templates/index.html:137
+msgid "Our teacher isn’t here to criticise, but to mentor you — and to learn from you too."
+msgstr "La nostra insegnante non è qui per criticarti, ma per guidarti come mentore — e per imparare da te allo stesso tempo."
 
 #: templates/index.html:147
 msgid "BUSINESS ENGLISH"
-msgstr "INGLESE COMMERCIALE"
+msgstr "BUSINESS ENGLISH"
 
 #: templates/index.html:148
-msgid ""
-"Available both online and in-person, finesse your Business English skills "
-"and get that promotion you’ve always dreamed of."
-msgstr ""
-"Disponibile sia online che di persona, affina le tue competenze di Inglese "
-"Commercialee ottieni la promozione che hai sempre sognato."
+msgid "Available online or in-person — sharpen your Business English skills and get the promotion you’ve always dreamed of!"
+msgstr "Disponibile online o in presenza — perfeziona il tuo Business English e ottieni la promozione che hai sempre sognato!"
 
 #: templates/index.html:149
-msgid ""
-"English is THE most widely spoken international business language and you "
-"are missing out on the top opportunities if you cannot express yourself "
-"properly! Together with our teacher, we can put together a course tailored "
-"specifically for you and your needs."
-msgstr ""
-"L'inglese è la lingua commerciale più parlata a livello internazionale e "
-"senon riesci a esprimerti correttamente, ti stai perdendo le migliori "
-"opportunità!Insieme al nostro insegnante, possiamo creare un corso su misura "
-"per te e le tue esigenze."
-
-#: templates/index.html:150
-msgid "Also available in groups."
-msgstr "Disponibile anche in gruppo."
+msgid "English is the most widely spoken international business language, and missing out on clear, confident communication means missing top opportunities. Together with our teacher, we’ll design a course tailored specifically to your goals and professional needs."
+msgstr "L’inglese è la lingua più diffusa nel mondo degli affari e non saper comunicare in modo chiaro e sicuro significa perdere grandi opportunità. Insieme alla nostra insegnante, progetteremo un corso su misura, pensato appositamente per i tuoi obiettivi e le tue esigenze professionali."
 
 #: templates/index.html:161
 msgid "WORKSHOPS & ACTIVITIES"
-msgstr ""
+msgstr "LABORATORI & ATTIVITÀ"
 
 #: templates/index.html:162
-msgid ""
-"Looking for a creative way to improve your English? Or a different way to "
-"show your child how fun and limitless learning English can be?"
-msgstr ""
-"Cerchi un modo creativo per migliorare il tuo inglese? O un modo diverso per "
-"mostrare a tuo figlio quanto può essere divertente e illimitato imparare "
-"l'inglese?"
+msgid "English workshops and activities in collaboration with local artists and teachers!"
+msgstr "Laboratori e attività di inglese in collaborazione con artisti e insegnanti locali!"
 
 #: templates/index.html:163
-msgid ""
-"Come and try our workshops! At The English Studio, we work alongside other "
-"individual talents in the area to bring you some top tier bilingual "
-"laboratories."
-msgstr ""
-"Vieni a provare i nostri workshop! Presso The English Studio, collaboriamo "
-"con altri talenti della zona per offrirti laboratori bilingue di alto "
-"livello."
+msgid "At The English Studio, we’re always working to provide you with opportunities to use English creatively and have fun while learning."
+msgstr "A The English Studio lavoriamo sempre per offrirti opportunità di usare l’inglese in modo creativo e divertirti mentre impari."
 
 #: templates/index.html:164
-msgid "Spaces are limited so make sure to book in ASAP!"
-msgstr "I posti sono limitati, quindi assicurati di prenotare al più presto!"
+msgid "Follow us on Instagram for the latest updates — you won’t want to miss out!"
+msgstr "Seguici su Instagram per rimanere aggiornato — non vorrai perderti nulla!"
+
+# --- END UPDATED INDEX CARDS ---
 
 #: templates/index.html:173
 msgid "CONTACT US"

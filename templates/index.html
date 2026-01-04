@@ -54,7 +54,7 @@
 
 <!-- Main Content -->
   <section id="about" class="container-fluid py-4 text-center">
-    <img src="{% static 'compressed/door.webp' %}" class="mb-3 teacher_pic" alt="Learn English with Confidence">
+    <img src="{% static 'compressed/door.webp' %}" class="d-inline-block mb-3" style="max-width: 100px;" alt="Learn English with Confidence">
     <img src="{% static 'compressed/leannepic.webp' %}" class="rounded-circle mb-3 teacher_pic" alt="{% trans 'Teacher' %}">
     <h1 class="navy primaryfont headersize">{% trans "Hi, I'm Leanne!" %}</h1>
    <p class="navy justify-text aboutp body-text mt-2 px-4">
@@ -85,90 +85,120 @@
     <h2 class="text-center head-navy primaryfont mb-3 indexheader w-100">{% trans "What We Offer" %}</h2>
     <div class="row g-4">
 
-      <!-- After School -->
-      <div class="col-md-6" id="classes1">
-        <div class="card h-100">
-          <img src="{% static 'compressed/apple.webp' %}" class="card-img-top icon-presets mt-3" alt="...">
-          <div class="card-body">
-            <h3 class="card-title red body-text text-center">{% trans "AFTER SCHOOL CLUB" %}</h3>
-            <p class="card-text navy body-text">{% trans "Come and join us after school for 90 mins of full immersion English, with our native mother tongue teacher who provides exciting and fun activities for primary school children." %}</p>
-            <p class="card-text navy body-text">{% trans "Expose your children to the world and help them acquire fundamental language skills at a young age, preparing them for their best possible future." %}</p>
-            <p class="card-text red body-text"><b>{% trans "Price on request." %}<br>{% trans "Up to 8 children for each session." %}</b></p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Teens -->
-      <div class="col-md-6">
-        <div class="card h-100" id="classes3">
-          <img src="{% static 'compressed/chat.webp' %}" class="card-img-top icon-presets mt-3" alt="...">
-          <div class="card-body">
-            <h3 class="card-title red body-text text-center">{% trans "TEENS" %}</h3>
-            <p class="card-text navy body-text">{% trans "English lessons tailored to all your needs. Our professionally trained and well-experienced teacher can help you define what you are looking for and together, we can reach your goals." %}</p>
-            <p class="card-text navy body-text">{% trans "Imagine a life where you are fluent in English. If you can imagine it, we can achieve it." %}</p>
-            <br>
-            <p class="card-text red body-text"><b>{% trans "Price discussed on request" %}</b></p>
-          </div>
-        </div>
-      </div>
-
-      <!-- IELTS Test Prep -->
-      <div class="col-md-6">
-        <div class="card h-100" id="classes4">
-          <img src="{% static 'compressed/rosette.webp' %}" class="card-img-top alt-icon-preset mt-4" alt="...">
-          <div class="card-body">
-            <h3 class="card-title red body-text text-center">{% trans "TEST PREP" %}</h3>
-            <p class="card-text navy body-text">{% trans "Specialising in IELTS test prep, learn all the tips and tricks you need in order to achieve the score of your dreams!" %}</p>
-            <p class="card-text body-text navy">{% trans "Our teacher has an excellent record in helping students realise their goals through her outstanding understanding of the difficult exam and how to navigate those high band scores." %}</p>
-           <br>
-            <p class="card-text red body-text"><b>{% trans "Price discussed on request." %}</b></p>
-          </div>
-        </div>
-      </div>
-
-             <!-- Adults -->
-      <div class="col-md-6" id="classes6">
-        <div class="card h-100">
-          <img src="{% static 'compressed/book.webp' %}" class="card-img-top alt-icon-preset2 mt-3" alt="...">
-          <div class="card-body">
-            <h3 class="card-title red body-text text-center">{% trans "ADULTS" %}</h3>
-            <p class="card-text navy body-text">{% trans "Whether you want to rent our cozy space for a party, or if you want to work together to plan your child’s birthday party of their dreams, send us a message to see how you can make their dream your reality." %}</p>   
-            <br>
-            <p class="card-text red body-text"><b>{% trans "Price discussed on request." %}</b></p>
-          </div>
-        </div>
-      </div>
+     <!-- After School -->
+<div class="col-md-6" id="classes1">
+  <div class="card h-100">
+    <img src="{% static 'compressed/apple.webp' %}" class="card-img-top icon-presets mt-3" alt="...">
+    <div class="card-body">
+      <h3 class="card-title red body-text text-center">{% trans "AFTER SCHOOL CLUB" %}</h3>
+      <p class="card-text navy body-text">
+        {% trans "Join us after school for the perfect environment where your kids can learn English in a fun and exciting way! Each session is packed with energy and creativity, helping children consolidate grammar in refreshing, practical ways — turning what they learn in school into real, spoken, and written English." %}
+      </p>
+      <p class="card-text navy body-text">
+        {% trans "Expose your children to the world and help them acquire fundamental language skills at a young age, preparing them for their best possible future." %}
+      </p>
     </div>
+  </div>
+</div>
 
-      <!-- Business English -->
-      <div class="col-md-6" id="classes2">
-        <div class="card h-100">
-          <img src="{% static 'compressed/briefcase.webp' %}" class="card-img-top alt-icon-preset mt-3" alt="...">
-          <div class="card-body">
-            <h3 class="card-title red body-text text-center">{% trans "BUSINESS ENGLISH" %}</h3>
-            <p class="card-text navy body-text">{% trans "Available both online and in-person, finesse your Business English skills and get that promotion you’ve always dreamed of." %}</p>
-            <p class="card-text body-text navy">{% trans "English is THE most widely spoken international business language and you are missing out on the top opportunities if you cannot express yourself properly! Together with our teacher, we can put together a course tailored specifically for you and your needs." %}</p>
-            <p class="card-text red body-text"><b>{% trans "Also available in groups." %}<br>{% trans "Price discussed on request." %}</b></p>
-          </div>
-        </div>
-      </div>
-    
+<!-- Teens -->
+<div class="col-md-6">
+  <div class="card h-100" id="classes3">
+    <img src="{% static 'compressed/chat.webp' %}" class="card-img-top icon-presets mt-3" alt="...">
+    <div class="card-body">
+      <h3 class="card-title red body-text text-center">{% trans "TEENS" %}</h3>
+      <p class="card-text navy body-text">
+        {% trans "One-on-one or group lessons available for teens seeking extra academic support." %}
+      </p>
+      <p class="card-text navy body-text">
+        {% trans "With an excellent academic record, our teacher is confident she can use creative methods to help you reach your goals. Lessons are designed not only to help you fully understand grammar, but also to find practical, relatable ways to apply the rules you learn at school in your daily life. Every lesson helps you elevate your English and get closer to meeting your academic needs — one lesson at a time." %}
+      </p>
+    </div>
+  </div>
+</div>
 
-     <!-- Workshops & Activities -->
-      <div class="col-md-6" id="classes5">
-        <div class="card h-100">
-          <img src="{% static 'compressed/crafts.webp' %}" class="card-img-top alt-icon-preset2 mt-3" alt="...">
-          <div class="card-body">
-            <h3 class="card-title red body-text text-center">{% trans "WORKSHOPS & ACTIVITIES" %}</h3>
-            <p class="card-text navy body-text">{% trans "Looking for a creative way to improve your English? Or a different way to show your child how fun and limitless learning English can be?" %}</p>
-            <p class="card-text body-text navy">{% trans "Come and try our workshops! At The English Studio, we work alongside other individual talents in the area to bring you some top tier bilingual laboratories." %}</p>
-            <p class="card-text body-text navy">{% trans "Spaces are limited so make sure to book in ASAP!" %}</p>
-            <br>
-            <p class="card-text red body-text"><b>{% trans "Price discussed on request." %}</b></p>
-          </div>
-        </div>
-      </div>
+<!-- IELTS Test Prep -->
+<div class="col-md-6">
+  <div class="card h-100" id="classes4">
+    <img src="{% static 'compressed/rosette.webp' %}" class="card-img-top alt-icon-preset mt-4" alt="...">
+    <div class="card-body">
+      <h3 class="card-title red body-text text-center">{% trans "TEST PREP" %}</h3>
+      <p class="card-text navy body-text">
+        {% trans "Comprehensive lessons covering all academic bases! What better place to prepare for British Council exams than with a native British teacher with an excellent academic record?" %}
+      </p>
+      <p class="card-text body-text navy">
+        {% trans "Our teacher knows all the tips and tricks to help you achieve the top marks you need to reach your target score! Lessons are personalised to your strengths and weaknesses, giving you the confidence, strategies, and practice to succeed one step at a time." %}
+      </p>
+    </div>
+  </div>
+</div>
 
+<!-- Adults -->
+<div class="col-md-6" id="classes6">
+  <div class="card h-100">
+    <img src="{% static 'compressed/book.webp' %}" class="card-img-top alt-icon-preset2 mt-3" alt="...">
+    <div class="card-body">
+      <h3 class="card-title red body-text text-center">{% trans "ADULTS" %}</h3>
+
+      <p class="card-text navy body-text">
+        {% trans "English for yourself — discover how our bespoke lessons can transform your journey." %}
+      </p>
+
+      <p class="card-text navy body-text">
+        {% trans "Learn English in a way you’ve never experienced before: have fun, engage fully, and unlock your potential. Our teacher has all the tools to help you come out of your shell and connect the grammar ingrained in your mind to produce beautifully spoken and written English." %}
+      </p>
+
+      <p class="card-text navy body-text">
+        {% trans "Don’t worry — our school is a judgement-free space where effort is always praised, and our goal is simple: to help you feel confident in yourself and your English." %}
+      </p>
+
+      <p class="card-text navy body-text">
+        {% trans "Our teacher isn’t here to criticise, but to mentor you — and to learn from you too." %}
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- Business English -->
+<div class="col-md-6" id="classes2">
+  <div class="card h-100">
+    <img src="{% static 'compressed/briefcase.webp' %}" class="card-img-top alt-icon-preset mt-3" alt="...">
+    <div class="card-body">
+      <h3 class="card-title red body-text text-center">{% trans "BUSINESS ENGLISH" %}</h3>
+
+      <p class="card-text navy body-text">
+        {% trans "Available online or in-person — sharpen your Business English skills and get the promotion you’ve always dreamed of!" %}
+      </p>
+
+      <p class="card-text body-text navy">
+        {% trans "English is the most widely spoken international business language, and missing out on clear, confident communication means missing top opportunities. Together with our teacher, we’ll design a course tailored specifically to your goals and professional needs." %}
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- Workshops & Activities -->
+<div class="col-md-6" id="classes5">
+  <div class="card h-100">
+    <img src="{% static 'compressed/crafts.webp' %}" class="card-img-top alt-icon-preset2 mt-3" alt="...">
+    <div class="card-body">
+      <h3 class="card-title red body-text text-center">{% trans "WORKSHOPS & ACTIVITIES" %}</h3>
+
+      <p class="card-text navy body-text">
+        {% trans "English workshops and activities in collaboration with local artists and teachers!" %}
+      </p>
+
+      <p class="card-text body-text navy">
+        {% trans "At The English Studio, we’re always working to provide you with opportunities to use English creatively and have fun while learning." %}
+      </p>
+
+      <p class="card-text body-text navy">
+        {% trans "Follow us on Instagram for the latest updates — you won’t want to miss out!" %}
+      </p>
+    </div>
+  </div>
+</div>
+  
 
     <div class="text-center headertext mt-4">
       <a href="{% url 'contact' %}" class="btn btn-red primaryfont">{% trans "CONTACT US" %}</a>
