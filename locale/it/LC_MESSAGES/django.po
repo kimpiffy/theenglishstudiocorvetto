@@ -480,6 +480,8 @@ msgstr "Scopri di più"
 msgid "Business English"
 msgstr "Inglese Commerciale"
 
+
+
 #: templates/index.html:25
 msgid "Study to access a world of great opportunities."
 msgstr "Studia per accedere a un mondo di grandi opportunità."
@@ -505,12 +507,8 @@ msgid "Teacher"
 msgstr "Insegnante"
 
 #: templates/index.html:58
-msgid "Learn English"
-msgstr "Impara l'inglese"
-
-#: templates/index.html:59
-msgid "with Leanne"
-msgstr "con Leanne"
+msgid "Hi, I'm Leanne!"
+msgstr "Ciao, sono Leanne!"
 
 #: templates/index.html:60
 msgid ""
@@ -609,8 +607,8 @@ msgid "Up to 8 children for each session."
 msgstr "Fino a 8 bambini per sessione."
 
 #: templates/index.html:94
-msgid "PRIVATE ENGLISH LESSONS"
-msgstr "LEZIONI PRIVATE DI INGLESE"
+msgid "TEENS"
+msgstr "TEENS"
 
 #: templates/index.html:95
 msgid ""
@@ -637,8 +635,8 @@ msgid "Price discussed on request"
 msgstr "Prezzo da concordare su richiesta."
 
 #: templates/index.html:108
-msgid "IELTS TEST PREP"
-msgstr "PREPARAZIONE AL TEST IELTS"
+msgid "TEST PREPS"
+msgstr "TEST PREPS"
 
 #: templates/index.html:109
 msgid ""
@@ -719,8 +717,8 @@ msgid "Spaces are limited so make sure to book in ASAP!"
 msgstr "I posti sono limitati, quindi assicurati di prenotare al più presto!"
 
 #: templates/index.html:151
-msgid "PARTIES"
-msgstr ""
+msgid "ADULTS"
+msgstr "ADULTI"
 
 #: templates/index.html:152
 msgid ""
