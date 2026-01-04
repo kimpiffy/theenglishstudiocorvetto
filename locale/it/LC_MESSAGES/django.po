@@ -468,37 +468,40 @@ msgid "Home"
 msgstr ""
 
 #: templates/index.html:17
-msgid "Making friends and learning English is so fun!"
-msgstr "Fare amicizia e imparare l'inglese è così divertente!"
+msgid "AFTER SCHOOL CLUBS"
+msgstr "DOPOSCUOLA"
 
-#: templates/index.html:18 templates/index.html:26 templates/index.html:34
-#: templates/index.html:42
+#: templates/index.html:18
+msgid "An environment where children feel truly excited to learn English!"
+msgstr "Un ambiente in cui i bambini si sentono davvero entusiasti di imparare l’inglese!"
+
+#: templates/index.html:18 templates/index.html:26 templates/index.html:34 templates/index.html:42
 msgid "Learn More"
 msgstr "Scopri di più"
 
 #: templates/index.html:24
-msgid "Business English"
-msgstr "Inglese Commerciale"
+msgid "BUSINESS ENGLISH"
+msgstr "INGLESE COMMERCIALE"
 
 #: templates/index.html:25
-msgid "Study to access a world of great opportunities."
-msgstr "Studia per accedere a un mondo di grandi opportunità."
+msgid "Access to a career of opportunities is only one lesson away."
+msgstr "L’accesso a una carriera piena di opportunità è a una sola lezione di distanza."
 
 #: templates/index.html:32
-msgid "Private Tutoring"
-msgstr "Tutoraggio privato"
+msgid "ONE-ON-ONE’S"
+msgstr "LEZIONI INDIVIDUALI"
 
 #: templates/index.html:33
-msgid "Personalized support to help you reach your goals."
-msgstr "Supporto personalizzato per aiutarti a raggiungere i tuoi obiettivi."
+msgid "Bespoke lessons designed to help you gain your confidence."
+msgstr "Lezioni su misura pensate per aiutarti a ritrovare la tua sicurezza."
 
 #: templates/index.html:40
-msgid "IELTS Test Preps"
-msgstr "Preparazione al test IELTS"
+msgid "TEST PREPS"
+msgstr "PREPARAZIONE AI TEST"
 
 #: templates/index.html:41
-msgid "Feel prepared to reach your highest potential."
-msgstr "Sentiti pronto a raggiungere il tuo massimo potenziale."
+msgid "Be prepared to unlock your potential to reach your academic goals."
+msgstr "Preparati a sbloccare il tuo potenziale per raggiungere i tuoi obiettivi accademici."
 
 #: templates/index.html:57
 msgid "Teacher"
@@ -576,7 +579,7 @@ msgstr "Cosa Offriamo"
 # --- START UPDATED INDEX CARDS ---
 
 #: templates/index.html:92
-msgid "AFTER SCHOOL CLUB"
+msgid "AFTER SCHOOL CLUBS"
 msgstr "DOPOSCUOLA"
 
 #: templates/index.html:93
