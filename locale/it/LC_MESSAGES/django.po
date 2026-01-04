@@ -578,10 +578,6 @@ msgstr "Cosa Offriamo"
 
 # --- START UPDATED INDEX CARDS ---
 
-#: templates/index.html:92
-msgid "AFTER SCHOOL CLUBS"
-msgstr "DOPOSCUOLA"
-
 #: templates/index.html:93
 msgid "Join us after school for the perfect environment where your kids can learn English in a fun and exciting way! Each session is packed with energy and creativity, helping children consolidate grammar in refreshing, practical ways — turning what they learn in school into real, spoken, and written English."
 msgstr "Unisciti a noi dopo scuola per offrire ai tuoi bambini l’ambiente perfetto dove imparare l’inglese in modo divertente ed entusiasmante! Ogni lezione è piena di energia e creatività, aiutando i bambini a consolidare la grammatica in modi pratici e stimolanti — trasformando ciò che imparano a scuola in inglese parlato e scritto reale."
@@ -633,10 +629,6 @@ msgstr "Non preoccuparti — la nostra scuola è uno spazio senza giudizi, dove 
 #: templates/index.html:137
 msgid "Our teacher isn’t here to criticise, but to mentor you — and to learn from you too."
 msgstr "La nostra insegnante non è qui per criticarti, ma per guidarti come mentore — e per imparare da te allo stesso tempo."
-
-#: templates/index.html:147
-msgid "BUSINESS ENGLISH"
-msgstr "BUSINESS ENGLISH"
 
 #: templates/index.html:148
 msgid "Available online or in-person — sharpen your Business English skills and get the promotion you’ve always dreamed of!"
