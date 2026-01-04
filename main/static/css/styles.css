@@ -329,6 +329,11 @@ img.footerpic {
   height: 10rem;
 }
 
+.learnenglishpic {
+  width: 10rem;
+  height: 10rem;
+}
+
 /* flyers (homepage) */
 /* prevent horizontal scroll bleeding */
 #upcoming { 
@@ -735,6 +740,11 @@ img.footerpic {
     height: 20rem;
   }
 
+    .learnenglishpic {
+    width: 20rem; 
+    height: 20rem;
+  }
+  
   /* constrain blog inline image width */
   .blogpicture {
     max-width: 350px;
