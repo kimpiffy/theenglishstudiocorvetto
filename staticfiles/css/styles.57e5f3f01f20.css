@@ -1,0 +1,790 @@
+/*---general styles---*/
+/* page body background colour (forced) */
+body {
+    background-color: #fdfbf6 !important;
+}
+
+/* generic circular border utility: light border, 2px, rounded full */
+.border {
+  border-color: #fdfbf6 !important; 
+  border-width: 2px !important;
+  border-radius: 50%;
+}
+
+/* main content padding and minimum viewport height */
+main {
+  padding: 1.5rem 20px;
+  min-height: 75vh;
+}
+
+/* bootstrap container override: remove horizontal gutters using CSS var */
+.container-fluid {
+  --bs-gutter-x: 0 !important;
+}
+
+/* tighten h1 line height */
+h1 {
+  line-height: 0.8 !important;
+}
+
+/* color pallette */
+/* make bold text inside #about red */
+#about b {
+  color: #B30000;
+}
+
+/* off-white text utility */
+.off-white {
+  color: #fdfbf6 !important;
+}
+
+/* navy text utility */
+.navy {
+  color: #37376B !important;
+}
+
+/* navy background utility */
+.navy-bg {
+  background-color: #37376B;
+}
+
+/* red text utility */
+.red {
+  color: #B30000 !important;
+}
+
+/* red on hover utility for links/elements */
+.red-hover:hover {
+  color: #B30000 !important;
+}
+
+/*---fonts & text styles---*/
+/* primary/header font (uppercase, Archivo Black) */
+.primaryfont {
+  font-family: 'Archivo Black', sans-serif;
+  text-transform: uppercase;
+}
+
+/* body copy font (Cabin), normal weight and comfortable line height */
+.body-text {
+  font-family: 'Cabin', sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+/* justified text helper */
+.justify-text {
+  text-align: justify;
+}
+
+/* remove default link underline globally */
+a {
+  text-decoration: none;
+}
+
+/* small text size utility (e.g., footer) */
+.mini-text {
+  font-size: 12px;
+}
+
+/*---button styles---*/
+/* primary red button base */
+.btn-red {
+  background-color: #B30000;
+  color: #FFF;
+  border: none;
+}
+
+/* primary navy button base */
+.btn-navy {
+  background-color: #37376B !important;
+  color: #FFF;
+  border: none;
+}
+
+/* navy button hover/active states: switch to red, keep white text */
+.btn-navy:hover,
+.btn-navy:focus,
+.btn-navy:active {
+  background-color: #B30000 !important;
+  color: #FFF !important;
+  border: none;
+  transition: text-decoration-color 0.2s ease;
+}
+
+/* red button hover/focus: switch to navy */
+.btn-red:hover,
+.btn-red:focus {
+  background-color: #37376B;
+  color: #FFF;
+  text-decoration: none;
+  transition: text-decoration-color 0.2s ease;
+}
+
+/* modal primary button: center and constrain width */
+.modal-button {
+  width: 30% !important;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* base.html styles*/
+/*---navbar styles---*/
+/* underline-on-hover effect for nav links */
+.focusstyle {
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 5px;
+  transition: text-decoration-color 0.2s ease;
+}
+
+/* reveal underline colour on hover */
+.focusstyle:hover {
+  text-decoration-color: #B30000;
+}
+
+/* navbar brand image size */
+.nav_img {
+  width: 80px;
+  height: 80px;
+}
+
+/* right-align nav links, remove padding */
+.nav-link {
+  display: flex !important;
+  justify-content: flex-end !important;
+  padding: 0px !important;
+}
+
+/* hide default toggler icon colour (using custom hamburger) */
+.navbar-toggler {
+  color: transparent !important;
+}
+
+/* custom hamburger button base */
+.hamburger {
+  display: inline-block;
+  width: 33px;
+  height: 33px;
+  position: relative;
+  border: none;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+/* hamburger bars */
+.hamburger span {
+  display: block;
+  height: 4px;
+  width: 100%;
+  background-color: #37376B;
+  margin: 5px 0;
+  border-radius: 5px;
+  transition: all 0.4s ease-in-out;
+  transform-origin: center center;
+}
+
+/* active state: collapse gaps */
+.hamburger.active span {
+  margin: 0;
+}
+
+/* active: top bar becomes a 45° slash and turns red */
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(3px, 3px);
+  background-color: #B30000;
+}
+
+/* active: middle bar hidden */
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+/* active: bottom bar becomes -45° slash and turns red */
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(3px, -3px);
+  background-color: #B30000;
+}
+
+/* language buttons: remove native button chrome */
+.lang-but {
+  background-color: transparent;
+  border: none;
+}
+
+/* locale switcher alignment (right) */
+.locale_select {
+  display: flex !important;
+  justify-content: flex-end !important;
+}
+
+/* flag icon styling */
+.locale_img {
+  padding: 5px;
+  border: none !important;
+  background: none;
+}
+
+/*---header styles---*/
+/* navy header block with white text */
+.head-navy {
+  padding: 20px;
+  background-color: #37376B;
+  color: #FFF;
+  border: none;
+}
+
+/* responsive header size utility */
+.headersize {
+  font-size: calc(1.375rem + 1.5vw);
+}
+  
+/*---footer styles---*/
+/* top border for footer */
+.row-border-red {
+  border-top: 2px solid #B30000 !important;
+}
+
+/* footer brand image size */
+.footer-logo {
+  width: 100px;
+  height: 100px;
+}
+
+/* footer section header size */
+.footerheader {
+  font-size: 16px;
+}
+
+/* “follow us” image sizing */
+img.footerpic {
+  width: 150px;
+  height: 13px;
+}
+
+/* remove horizontal gutters for rows marked gutterless-row */
+.gutterless-row {
+  --bs-gutter-x: 0 !important;
+}
+
+/*--- index.html styles---*/
+/*hero section styles*/
+/* rounded corners and hidden overflow for hero/carousel containers */
+#heroCarousel, .indexheader {
+  border-radius: 15px;  
+  overflow: hidden;     
+}
+
+/* generic icon image preset (130px height) */
+.icon-presets {
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+  width: auto;
+  height: 130px;
+}
+  
+/* alternative icon size (140px height) */
+.alt-icon-preset {
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+  width: auto;
+  height: 140px;   
+}
+
+/* alternative icon size (160px height) */
+.alt-icon-preset2 {
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+  width: auto;
+  height: 160px;   
+}
+
+/* full-size overlay layer for carousel (non-interactive) */
+.carousel-background-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* foreground overlay container (above background overlay) */
+.carouseloverlay {
+  position: absolute;
+  z-index: 2;
+}
+
+/* teacher avatar sizing in cards/sections */
+.rounded-circle.mb-3.teacher_pic {
+  width: 10rem;
+  height: 10rem;
+}
+
+/* flyers (homepage) */
+/* prevent horizontal scroll bleeding */
+#upcoming { 
+  overflow-x: hidden; 
+}
+
+/* show/hide wrappers from the template (defaults) */
+.mobile-only { 
+  display: block; 
+}
+.desktop-only { 
+  display: none; 
+}
+
+/* --- image sizing ------------------------------------------------- */
+/* desktop/tablet flyers: fixed visual height, contained aspect */
+.flyer-70vh {
+  display: block;
+  height: 70vh;
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
+  border-radius: 12px;
+}
+
+/* phone flyers: scale by width, keep aspect */
+.flyer-mobile {
+  display: block;
+  width: min(94vw, 640px);
+  height: auto;
+  max-width: 100%;
+  object-fit: contain;
+  border-radius: 12px;
+}
+
+/* --- coverflow shell (≥768px) ------------------------------------ */
+/* coverflow wrapper: centered, padded, max width */
+.flyer-cf {
+  position: relative;
+  max-width: min(1100px, 96vw);
+  margin-inline: auto;
+  padding-inline: clamp(8px, 4vw, 40px);
+}
+
+/* coverflow stage: fixed height, allow overflow for 3D effect */
+.flyer-cf-track {
+  position: relative;
+  height: clamp(420px, 70vh, 820px);
+  overflow: visible;
+}
+
+/* center each absolute-positioned slide via transform */
+.flyer-cf-slide {
+  position: absolute;
+  top: 0; 
+  bottom: 0; 
+  left: 50%;
+  display: flex; 
+  align-items: center; 
+  justify-content: center;
+  transform: translateX(-50%);
+  transform-origin: center center;
+  transition: transform .45s ease, opacity .3s ease;
+  will-change: transform;
+}
+
+/* coverflow nav arrows (inside wrapper) */
+.cf-nav {
+  position: absolute; 
+  top: 50%; 
+  transform: translateY(-50%);
+  z-index: 9999;
+  pointer-events: auto;
+  background: transparent; 
+  border: 0; 
+  cursor: pointer;
+  color: #B30000; 
+  line-height: 1; 
+  font-size: clamp(28px, 4vw, 44px);
+  padding: .25rem .5rem;
+  filter: drop-shadow(0 2px 6px rgba(0,0,0,.35));
+  user-select: none;
+}
+
+/* previous arrow placement */
+.cf-prev { 
+  left: clamp(8px, 2vw, 24px); 
+}
+
+/* next arrow placement */
+.cf-next { 
+  right: clamp(8px, 2vw, 24px); 
+}
+
+/* two-up flyer container: center content and cap width */
+.two-up .two-up-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: min(640px, 100%);
+}
+
+/* two-up images: equal heights, cover if needed */
+.two-up .two-up-img {
+  height: 45vh;
+  width: auto;
+  object-fit: cover;
+  display: block;
+}
+
+/*blog styles*/
+/* blog card UI: red border, rounded, white bg */
+.blog-card {
+  border: 3px solid #B30000 !important;
+  border-radius: 15px;
+  background-color: #ffffff !important;
+}
+
+/* post image container with 80% aspect placeholder (positioned children) */
+.poststyles {
+  position: relative;
+  width: 100%;
+  padding-top: 80%;
+  overflow: hidden;
+  border-top-left-radius: 11px;
+  border-top-right-radius: 11px;
+}
+
+/* blog images scale responsively */
+.blogpicture {
+  max-width: 100%;
+  height: auto;
+}
+
+/* justified paragraph text inside blog content */
+.blog-text {
+  text-align: justify;
+}
+
+/* make preview images fill container and keep corners rounded */
+.poststyles img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-top-left-radius: 11px;
+  border-top-right-radius: 11px;
+}
+
+/* handwritten signature image sizing */
+.signature {
+  margin-top: 20px;
+  width: 150px;
+  height: auto;
+}
+
+/*contact.html styles*/
+/* modal content width override */
+.modal-content {
+  width: 80%;
+}
+
+/* center modal dialog more toward top-middle */
+.modal-dialog-centered {
+  align-items: flex-start;
+  justify-content: center !important; 
+}
+
+/*calendar.html  styles*/ 
+/* calendar grid: 7 equal columns with gaps */
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 0.5rem;
+}
+
+/* weekday header cells (uppercased, bold, centered) */
+.weekday {
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+  padding: 0.5rem 0;
+  border-radius: 10px;
+}
+
+/* day cells: white card with square shape and content stack */
+.day {
+  position: relative;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  background: white;
+  aspect-ratio: 1 / 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0.3rem;
+  overflow: hidden;
+}
+
+/* out-of-month day appearance */
+.day.other-month {
+  background: #ffffff;
+  border-radius: 10px;
+}
+
+/* date number styling */
+.date {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #B30000;
+}
+
+/* grid holding up to 4 emojis in a day cell (2x2) */
+.emoji-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2px;
+  width: 100%;
+  justify-items: center;
+  align-items: center;
+}
+
+/* emoji size and centering */
+.emoji {
+  font-size: 1.2rem;
+  line-height: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
+}
+
+/* hidden tooltip bubble (manual show/hide) */
+.tooltip {
+  display: none;
+  position: absolute;
+  background: white;
+  border: 1px solid #aaa;
+  padding: 0.3rem 0.5rem;
+  font-size: 0.8rem;
+  top: -1rem;
+  right: 2rem;
+  z-index: 10;
+}
+
+/* show tooltip when hovering the emoji container */
+.emoji:hover .tooltip {
+  display: block;
+}
+
+/* full-cell invisible trigger for JS tooltips (Tippy) */
+.tippy-trigger {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  cursor: pointer;
+  z-index: 5;
+}
+
+/* removes tooltip arrow and improves mobile visibility (Tippy theme) */
+.tippy-box[data-theme~='custom'] {
+  background-color: #37376B;
+  color: #fdfbf6;
+  font-family: 'Cabin', sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  border-radius: 4px;
+  padding: 0.5rem;
+  font-size: 0.85rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  text-align: center;
+  z-index: 9999;
+}
+
+/* hide default Tippy arrow for this theme */
+.tippy-box[data-theme~='custom'] > .tippy-arrow {
+  display: none !important;
+}
+
+/*---media queries---*/
+
+/* phone adjustments (≤576px) */
+@media (max-width: 576px) {
+  /* denser calendar grid on mobile */
+  .calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 2px;
+    justify-content: center;
+  }
+
+  /* smaller day cells; left/top aligned content */
+  .day {
+    aspect-ratio: 1 / 1;
+    padding: 2px;
+    font-size: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    overflow: visible;
+  }
+
+  /* smaller date number */
+  .date {
+    font-size: 12px;
+    line-height: 1;
+    margin-bottom: 0.25rem;
+  }
+
+  /* smaller, breakable emoji text; re-enable pointer for tooltip */
+  .emoji {
+    font-size: 12px;
+    max-width: 100%;
+    word-break: break-word;
+    line-height: 1;
+    pointer-events: auto;
+  }
+}
+
+/* tablet & down adjustments (≤768px) */
+@media (max-width: 768px) {
+  /* center and contain carousel overlay with translucent bg */
+  .carouseloverlay {
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    position: absolute !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    max-width: 90% !important;
+    padding: 1rem !important;
+    background-color: rgba(55, 55, 107, 0.651);
+    border-radius: 1rem;
+  }
+
+  /* utility: center block on mobile */
+  .center-on-mobile {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* smaller headline/text/buttons for mobile */
+  .smallerheader {
+    font-size: 16px !important;
+    line-height: 1.2 !important;
+  }
+
+  .smallertext {
+    font-size: 12px !important;
+    line-height: 1.2 !important;
+  }
+
+  .smallerbtn {
+    font-size: 12px !important;
+    padding: 0.5rem 1rem !important;
+  }
+
+  /* contact page spacing on mobile */
+  .contact_header {
+    margin-top: 1.5rem !important;
+  }
+
+  /* slightly smaller base body text on mobile */
+  .body-text {
+    font-size: 14px;
+  }
+
+  /* smaller mini text on mobile */
+  .mini-text {
+    font-size: 10px;
+  }
+
+  /* remove nav link padding for stacked mobile menu */
+  .nav-link {
+    padding: 0 !important;
+  }
+}
+
+/* ≥768px: desktop-only visible, mobile-only hidden; larger brand and teacher image; blog images constrained */
+@media (min-width: 768px) {
+  /* toggle which wrapper shows on desktop */
+  .mobile-only { display: none; }
+  .desktop-only { display: block; }
+
+  /* larger navbar brand image */
+  .nav_img {
+    width: 120px;
+    height: 120px;
+  }
+
+  /* larger teacher portrait */
+  .rounded-circle.mb-3.teacher_pic {
+    width: 20rem; 
+    height: 20rem;
+  }
+
+  /* constrain blog inline image width */
+  .blogpicture {
+    max-width: 350px;
+    object-fit: contain;
+  }
+}
+
+/* ≥992px: nav padding, centered sections, widened about text, calendar tweak */
+@media (min-width: 992px) {
+  /* restore Bootstrap nav link paddings on large screens */
+  .nav-link {
+    padding-right: var(--bs-navbar-nav-link-padding-x) !important;
+    padding-left: var(--bs-navbar-nav-link-padding-x) !important;
+  }
+
+  /* center large-screen blocks when needed */
+  .bigcenter {
+    text-align: center;
+  }
+
+  /* wider margins for about paragraph on desktop */
+  .aboutp {
+    margin-left: 50px !important;
+    margin-right: 50px !important;
+  }
+    
+  /* desktop calendar: drop square aspect, use fixed height */
+  .day {
+    aspect-ratio: auto !important;
+    height: 120px;
+  }
+}
+
+/* ≥1000px: taller two-up images */
+@media (min-width: 1000px) {
+  .two-up .two-up-img {
+    height: 60vh;  
+  }
+}
+
+/* ≥1200px: even taller two-up images */
+@media (min-width: 1200px) {
+  .two-up .two-up-img {
+    height: 70vh;
+  }
+}
+
+/* ≥1400px: max two-up image height */
+@media (min-width: 1400px) {
+  .two-up .two-up-img {
+    height: 80vh;
+  }
+}
