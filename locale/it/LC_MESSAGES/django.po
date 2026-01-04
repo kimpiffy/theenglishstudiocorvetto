@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-03 13:10+0000\n"
+"POT-Creation-Date: 2026-01-04 14:18+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Kim Piffy <piffyinfo@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -189,24 +189,24 @@ msgstr "The English Studio"
 msgid "The English Studio Logo - Navigate Home"
 msgstr "The English Studio Logo - Naviga alla Home"
 
-#: templates/base.html:116 templates/base.html:196
+#: templates/base.html:117 templates/base.html:196
 msgid "About"
 msgstr "Informazioni"
 
-#: templates/base.html:119 templates/base.html:197
+#: templates/base.html:120 templates/base.html:197
+msgid "Gallery"
+msgstr "Galleria"
+
+#: templates/base.html:123 templates/base.html:198
 #: templates/schedule/calendar.html:9
 msgid "Schedule"
 msgstr "Orario"
 
-#: templates/base.html:122 templates/base.html:198
-msgid "Gallery"
-msgstr "Galleria"
-
-#: templates/base.html:125 templates/base.html:199
+#: templates/base.html:126 templates/base.html:199
 msgid "Blog"
 msgstr "Blog"
 
-#: templates/base.html:128 templates/base.html:200
+#: templates/base.html:129 templates/base.html:200
 msgid "Contact"
 msgstr "Contatto"
 
@@ -480,8 +480,6 @@ msgstr "Scopri di più"
 msgid "Business English"
 msgstr "Inglese Commerciale"
 
-
-
 #: templates/index.html:25
 msgid "Study to access a world of great opportunities."
 msgstr "Studia per accedere a un mondo di grandi opportunità."
@@ -512,72 +510,74 @@ msgstr "Ciao, sono Leanne!"
 
 #: templates/index.html:60
 msgid ""
-"I am a British mother tongue English teacher who was born and raised in "
-"England. I graduated from University in 2014 and have pursued my passion as "
-"a teacher, here in Milan, since then. During my years as an English teacher, "
-"I have worked on many different projects, ranging from CLIL in public "
-"schools, to lessons with Business English students from large multinational "
-"companies, from private lessons with adults and children, to test prep "
-"groups for IELTS & TOEIC."
+"Welcome to The English Studio in Corvetto — a space where learning English "
+"is fun, engaging, and designed just for you. I’m originally from England and "
+"now call Milan home. Over the years, I’ve taught adults, teens, little ones, "
+"business groups, IELTS and TOEIC students, and I’ve also hosted creative "
+"clubs and CLIL projects in schools. Alongside this experience, I hold a "
+"CELTA qualification, TEFL certification, and a First-Class Honours degree, "
+"and I regularly take part in ongoing professional training for young "
+"learners and teenagers. All of this shapes my approach to teaching: lessons "
+"that are friendly, interactive, and carefully tailored to each student."
 msgstr ""
-"Sono un'insegnante di inglese di madrelingua britannica, nata e cresciuta in "
-"Inghilterra. Mi sono laureata nel 2014 e da allora ho coltivato la mia "
-"passione per l'insegnamento qui a Milano. Durante i miei anni come "
-"insegnante di inglese, ho lavorato a molti progetti diversi, che spaziano "
-"dal CLIL nelle scuole pubbliche, alle lezioni con studenti di Business "
-"English di grandi multinazionali, dalle lezioni private con adulti e "
-"bambini, ai gruppi di preparazione ai test IELTS e TOEIC."
-
-#: templates/index.html:62
-msgid ""
-"All of this experience has led me to where I am today, whereby I am so proud "
-"to present to you <b>The English Studio</b> - my new, comprehensive English "
-"space. Here, I will provide lessons and activities for everyone, but above "
-"all, for children."
-msgstr ""
-"Tutta questa esperienza mi ha portato dove sono oggi, e sono così orgogliosa "
-"di presentarvi <b>The English Studio</b> - il mio nuovo spazio completo per "
-"l’inglese. Qui offrirò lezioni e attività per tutti, ma soprattutto per i "
-"bambini."
+"Benvenuti a The English Studio in Corvetto — uno spazio accogliente dove "
+"imparare l’inglese è divertente, coinvolgente e pensato su misura per te. "
+"Sono originaria dell’Inghilterra e oggi vivo a Milano. Negli anni ho "
+"insegnato a adulti, adolescenti, bambini piccoli, gruppi aziendali, studenti "
+"IELTS e TOEIC, e ho anche organizzato club creativi e progetti CLIL nelle "
+"scuole. Accanto a questa esperienza, possiedo la certificazione CELTA, la "
+"qualifica TEFL e una laurea con lode, e continuo a formarmi regolarmente "
+"nell’insegnamento a bambini e ragazzi. Tutto questo ha plasmato il mio "
+"approccio: lezioni dinamiche, interattive e personalizzate sulle esigenze di "
+"ogni studente."
 
 #: templates/index.html:64
 msgid ""
-"Combined with my passion for learning, I will give your children the best "
-"experience possible, in an atmosphere where the kids are excited to learn "
-"English, where they can have fun and play educational games in an all "
-"English environment, where they can learn new vocabulary that mirrors their "
-"Italian curriculum, and where they can pick up grammar in a natural and "
-"unforced way. My lessons and activities are full of creativity and I pour my "
-"heart and soul into every session. I am confident that if you are "
-"interested, you will not be disappointed from my lessons, and your children "
-"will not be either."
+"At The English Studio, we focus on real learning — building confidence, "
+"connecting ideas, sharing stories, and using English naturally. For "
+"children, lessons are playful and immersive, helping them absorb grammar and "
+"vocabulary in fun, meaningful ways. For adults, lessons are personalised to "
+"your specific goals, helping you move past plateaus and achieve real "
+"progress."
 msgstr ""
-"Unendo la mia passione per l’apprendimento, offrirò ai vostri figli la "
-"migliore esperienza possibile, in un ambiente dove i bambini saranno "
-"entusiasti di imparare l’inglese, divertirsi e giocare a giochi educativi in "
-"un ambiente totalmente in inglese, imparare vocabolario che rispecchia il "
-"loro curriculum italiano e assimilare la grammatica in modo naturale e "
-"spontaneo. Le mie lezioni sono ricche di creatività e ci metto cuore e "
-"anima. Sono certa che, se siete interessati, non rimarrete delusi, e nemmeno "
-"i vostri figli."
+"A The English Studio ci concentriamo sull’apprendimento reale: costruire "
+"sicurezza, collegare idee, condividere storie e usare l’inglese in modo "
+"naturale. Per i bambini, le lezioni sono giocose e immersive, per permettere "
+"loro di acquisire grammatica e vocabolario in modo divertente e "
+"significativo. Per gli adulti, le lezioni sono personalizzate in base ai "
+"tuoi obiettivi specifici, per aiutarti a superare i blocchi e fare progressi "
+"concreti con l’inglese."
 
-#: templates/index.html:66
+#: templates/index.html:68
 msgid ""
-"The world is a spectacular place but the world without English, is a closed "
-"door. Give your children the head start that they need today."
+"Whether you’re 3 or 103, a beginner or advanced learner, there’s a place for "
+"you here. Lessons are personalised, engaging, and designed to help you reach "
+"your goals in a supportive and inspiring environment. Get in touch today or "
+"pop by to see what our lessons are like — I can’t wait to meet you!"
 msgstr ""
-"Il mondo è un posto spettacolare, ma senza l’inglese è una porta chiusa. "
-"Date oggi ai vostri figli il vantaggio di cui hanno bisogno."
+"Che tu abbia 3 o 103 anni, che tu sia principiante o di livello avanzato, "
+"qui c’è spazio per te. Le lezioni sono coinvolgenti, su misura e pensate per "
+"aiutarti a raggiungere i tuoi obiettivi in un ambiente di supporto e "
+"stimolante. Contattami o passa a trovarmi per scoprire com’è una lezione — "
+"non vedo l’ora di conoscerti!"
 
-#: templates/index.html:74
+#: templates/index.html:73
+msgid ""
+"The world is a spectacular place, but without English, many doors remain "
+"closed. Unlock new opportunities with English today."
+msgstr ""
+"Il mondo è un posto straordinario, ma senza l’inglese molte porte restano "
+"chiuse. Apri nuove opportunità con l’inglese, oggi."
+
+#: templates/index.html:84
 msgid "What We Offer"
 msgstr "Cosa Offriamo"
 
-#: templates/index.html:81
+#: templates/index.html:92
 msgid "AFTER SCHOOL CLUB"
 msgstr "DOPO SCUOLA"
 
-#: templates/index.html:82
+#: templates/index.html:93
 msgid ""
 "Come and join us after school for 90 mins of full immersion English, with "
 "our native mother tongue teacher who provides exciting and fun activities "
@@ -587,7 +587,7 @@ msgstr ""
 "con la nostra insegnante madrelingua che offre attività stimolanti e "
 "divertenti per i bambini della scuola primaria."
 
-#: templates/index.html:83
+#: templates/index.html:94
 msgid ""
 "Expose your children to the world and help them acquire fundamental language "
 "skills at a young age, preparing them for their best possible future."
@@ -596,21 +596,21 @@ msgstr ""
 "competenzelinguistiche fondamentali fin da piccoli, preparandoli per il loro "
 "futuro migliore."
 
-#: templates/index.html:84
+#: templates/index.html:95
 #, fuzzy
 #| msgid "Price discussed on request."
 msgid "Price on request."
 msgstr "Prezzo da concordare su richiesta."
 
-#: templates/index.html:84
+#: templates/index.html:95
 msgid "Up to 8 children for each session."
 msgstr "Fino a 8 bambini per sessione."
 
-#: templates/index.html:94
+#: templates/index.html:105
 msgid "TEENS"
 msgstr "TEENS"
 
-#: templates/index.html:95
+#: templates/index.html:106
 msgid ""
 "English lessons tailored to all your needs. Our professionally trained and "
 "well-experienced teacher can help you define what you are looking for and "
@@ -620,7 +620,7 @@ msgstr ""
 "insegnante, qualificato e congrande esperienza, può aiutarti a definire ciò "
 "che stai cercando e, insieme, possiamo raggiungere ituoi obiettivi."
 
-#: templates/index.html:96
+#: templates/index.html:107
 msgid ""
 "Imagine a life where you are fluent in English. If you can imagine it, we "
 "can achieve it."
@@ -628,17 +628,19 @@ msgstr ""
 "Immagina una vita in cui parli fluentemente l'inglese.Se riesci a "
 "immaginarlo, noi possiamo realizzarlo."
 
-#: templates/index.html:98
+#: templates/index.html:109
 #, fuzzy
 #| msgid "Price discussed on request."
 msgid "Price discussed on request"
 msgstr "Prezzo da concordare su richiesta."
 
-#: templates/index.html:108
-msgid "TEST PREPS"
+#: templates/index.html:119
+#, fuzzy
+#| msgid "TEST PREPS"
+msgid "TEST PREP"
 msgstr "TEST PREPS"
 
-#: templates/index.html:109
+#: templates/index.html:120
 msgid ""
 "Specialising in IELTS test prep, learn all the tips and tricks you need in "
 "order to achieve the score of your dreams!"
@@ -646,7 +648,7 @@ msgstr ""
 "Specializzati nella preparazione al test IELTS, scopri tutti i trucchi e i "
 "consigli necessari perraggiungere il punteggio dei tuoi sogni!"
 
-#: templates/index.html:110
+#: templates/index.html:121
 msgid ""
 "Our teacher has an excellent record in helping students realise their goals "
 "through her outstanding understanding of the difficult exam and how to "
@@ -656,16 +658,31 @@ msgstr ""
 "studenti a raggiungere i loro obiettivi graziealla sua straordinaria "
 "comprensione di questo difficile e di come gestire punteggi elevati."
 
-#: templates/index.html:112 templates/index.html:125 templates/index.html:141
-#: templates/index.html:154
+#: templates/index.html:123 templates/index.html:136 templates/index.html:150
+#: templates/index.html:166
 msgid "Price discussed on request."
 msgstr "Prezzo da concordare su richiesta."
 
-#: templates/index.html:122
+#: templates/index.html:133
+msgid "ADULTS"
+msgstr "ADULTI"
+
+#: templates/index.html:134
+msgid ""
+"Whether you want to rent our cozy space for a party, or if you want to work "
+"together to plan your child’s birthday party of their dreams, send us a "
+"message to see how you can make their dream your reality."
+msgstr ""
+"Che tu voglia affittare il nostro accogliente spazio per una festa o che tu "
+"voglia collaborare all'organizzazione della festa di compleanno dei sogni di "
+"tuo figlio, inviaci un messaggio per scoprire come possiamo trasformare il "
+"suo sogno in realtà."
+
+#: templates/index.html:147
 msgid "BUSINESS ENGLISH"
 msgstr "INGLESE COMMERCIALE"
 
-#: templates/index.html:123
+#: templates/index.html:148
 msgid ""
 "Available both online and in-person, finesse your Business English skills "
 "and get that promotion you’ve always dreamed of."
@@ -673,7 +690,7 @@ msgstr ""
 "Disponibile sia online che di persona, affina le tue competenze di Inglese "
 "Commercialee ottieni la promozione che hai sempre sognato."
 
-#: templates/index.html:124
+#: templates/index.html:149
 msgid ""
 "English is THE most widely spoken international business language and you "
 "are missing out on the top opportunities if you cannot express yourself "
@@ -685,15 +702,15 @@ msgstr ""
 "opportunità!Insieme al nostro insegnante, possiamo creare un corso su misura "
 "per te e le tue esigenze."
 
-#: templates/index.html:125
+#: templates/index.html:150
 msgid "Also available in groups."
 msgstr "Disponibile anche in gruppo."
 
-#: templates/index.html:136
+#: templates/index.html:161
 msgid "WORKSHOPS & ACTIVITIES"
 msgstr ""
 
-#: templates/index.html:137
+#: templates/index.html:162
 msgid ""
 "Looking for a creative way to improve your English? Or a different way to "
 "show your child how fun and limitless learning English can be?"
@@ -702,7 +719,7 @@ msgstr ""
 "mostrare a tuo figlio quanto può essere divertente e illimitato imparare "
 "l'inglese?"
 
-#: templates/index.html:138
+#: templates/index.html:163
 msgid ""
 "Come and try our workshops! At The English Studio, we work alongside other "
 "individual talents in the area to bring you some top tier bilingual "
@@ -712,26 +729,11 @@ msgstr ""
 "con altri talenti della zona per offrirti laboratori bilingue di alto "
 "livello."
 
-#: templates/index.html:139
+#: templates/index.html:164
 msgid "Spaces are limited so make sure to book in ASAP!"
 msgstr "I posti sono limitati, quindi assicurati di prenotare al più presto!"
 
-#: templates/index.html:151
-msgid "ADULTS"
-msgstr "ADULTI"
-
-#: templates/index.html:152
-msgid ""
-"Whether you want to rent our cozy space for a party, or if you want to work "
-"together to plan your child’s birthday party of their dreams, send us a "
-"message to see how you can make their dream your reality."
-msgstr ""
-"Che tu voglia affittare il nostro accogliente spazio per una festa o che tu "
-"voglia collaborare all'organizzazione della festa di compleanno dei sogni di "
-"tuo figlio, inviaci un messaggio per scoprire come possiamo trasformare il "
-"suo sogno in realtà."
-
-#: templates/index.html:161
+#: templates/index.html:173
 msgid "CONTACT US"
 msgstr "Contattaci"
 

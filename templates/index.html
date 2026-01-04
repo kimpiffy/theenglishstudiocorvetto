@@ -56,14 +56,25 @@
   <section id="about" class="container-fluid py-4 text-center">
     <img src="{% static 'compressed/leanneprofile2.webp' %}" class="rounded-circle mb-3 teacher_pic" alt="{% trans 'Teacher' %}">
     <h1 class="navy primaryfont headersize">{% trans "Hi, I'm Leanne!" %}</h1>
-    <p class="navy justify-text aboutp body-text mt-2 px-4">{% trans "I am a British mother tongue English teacher who was born and raised in England. I graduated from University in 2014 and have pursued my passion as a teacher, here in Milan, since then. During my years as an English teacher, I have worked on many different projects, ranging from CLIL in public schools, to lessons with Business English students from large multinational companies, from private lessons with adults and children, to test prep groups for IELTS & TOEIC." %}</p> 
-    <br>
-    <p class="navy aboutp body-text px-4 bigcenter">{% trans "All of this experience has led me to where I am today, whereby I am so proud to present to you <b>The English Studio</b> - my new, comprehensive English space. Here, I will provide lessons and activities for everyone, but above all, for children." %}</p> 
-    <br>
-    <p class="navy aboutp justify-text body-text px-4">{% trans "Combined with my passion for learning, I will give your children the best experience possible, in an atmosphere where the kids are excited to learn English, where they can have fun and play educational games in an all English environment, where they can learn new vocabulary that mirrors their Italian curriculum, and where they can pick up grammar in a natural and unforced way. My lessons and activities are full of creativity and I pour my heart and soul into every session. I am confident that if you are interested, you will not be disappointed from my lessons, and your children will not be either." %}</p> 
-    <br>
-    <p class="red aboutp body-text bigcenter px-4"><b>{% trans "The world is a spectacular place but the world without English, is a closed door. Give your children the head start that they need today." %}</b></p>
-    <br>
+   <p class="navy justify-text aboutp body-text mt-2 px-4">
+  {% trans "Welcome to The English Studio in Corvetto — a space where learning English is fun, engaging, and designed just for you. I’m originally from England and now call Milan home. Over the years, I’ve taught adults, teens, little ones, business groups, IELTS and TOEIC students, and I’ve also hosted creative clubs and CLIL projects in schools. Alongside this experience, I hold a CELTA qualification, TEFL certification, and a First-Class Honours degree, and I regularly take part in ongoing professional training for young learners and teenagers. All of this shapes my approach to teaching: lessons that are friendly, interactive, and carefully tailored to each student." %}
+</p>
+<br>
+<p class="navy aboutp justify-text body-text px-4">
+  {% trans "At The English Studio, we focus on real learning — building confidence, connecting ideas, sharing stories, and using English naturally. For children, lessons are playful and immersive, helping them absorb grammar and vocabulary in fun, meaningful ways. For adults, lessons are personalised to your specific goals, helping you move past plateaus and achieve real progress." %}
+</p>
+<br>
+<p class="navy aboutp justify-text body-text px-4">
+  {% trans "Whether you’re 3 or 103, a beginner or advanced learner, there’s a place for you here. Lessons are personalised, engaging, and designed to help you reach your goals in a supportive and inspiring environment. Get in touch today or pop by to see what our lessons are like — I can’t wait to meet you!" %}
+</p>
+<br>
+<p class="red aboutp body-text bigcenter px-4">
+  <b>
+    {% trans "The world is a spectacular place, but without English, many doors remain closed. Unlock new opportunities with English today." %}
+  </b>
+</p>
+<br>
+
      <img src="{% static 'compressed/signature.webp' %}" alt="Leanne's signature" class="signature">
     <br>
     <br>
@@ -72,6 +83,7 @@
   <section class="container-fluid mt-3" id="classes">
     <h2 class="text-center head-navy primaryfont mb-3 indexheader w-100">{% trans "What We Offer" %}</h2>
     <div class="row g-4">
+
       <!-- After School -->
       <div class="col-md-6" id="classes1">
         <div class="card h-100">
@@ -85,7 +97,7 @@
         </div>
       </div>
 
-      <!-- Private Lessons -->
+      <!-- Teens -->
       <div class="col-md-6">
         <div class="card h-100" id="classes3">
           <img src="{% static 'compressed/chat.webp' %}" class="card-img-top icon-presets mt-3" alt="...">
@@ -112,6 +124,20 @@
           </div>
         </div>
       </div>
+
+             <!-- Adults -->
+      <div class="col-md-6" id="classes6">
+        <div class="card h-100">
+          <img src="{% static 'compressed/book.webp' %}" class="card-img-top alt-icon-preset2 mt-3" alt="...">
+          <div class="card-body">
+            <h3 class="card-title red body-text text-center">{% trans "ADULTS" %}</h3>
+            <p class="card-text navy body-text">{% trans "Whether you want to rent our cozy space for a party, or if you want to work together to plan your child’s birthday party of their dreams, send us a message to see how you can make their dream your reality." %}</p>   
+            <br>
+            <p class="card-text red body-text"><b>{% trans "Price discussed on request." %}</b></p>
+          </div>
+        </div>
+      </div>
+    </div>
 
       <!-- Business English -->
       <div class="col-md-6" id="classes2">
@@ -142,19 +168,6 @@
         </div>
       </div>
 
-       <!-- Parties -->
-      <div class="col-md-6" id="classes6">
-        <div class="card h-100">
-          <img src="{% static 'compressed/book.webp' %}" class="card-img-top alt-icon-preset2 mt-3" alt="...">
-          <div class="card-body">
-            <h3 class="card-title red body-text text-center">{% trans "ADULTS" %}</h3>
-            <p class="card-text navy body-text">{% trans "Whether you want to rent our cozy space for a party, or if you want to work together to plan your child’s birthday party of their dreams, send us a message to see how you can make their dream your reality." %}</p>   
-            <br>
-            <p class="card-text red body-text"><b>{% trans "Price discussed on request." %}</b></p>
-          </div>
-        </div>
-      </div>
-    </div>
 
     <div class="text-center headertext mt-4">
       <a href="{% url 'contact' %}" class="btn btn-red primaryfont">{% trans "CONTACT US" %}</a>
