@@ -508,8 +508,8 @@ msgid "Teacher"
 msgstr "Insegnante"
 
 #: templates/index.html:58
-msgid "."
-msgstr "."
+msgid "Learn English with Confidence "
+msgstr "Impara l’inglese con sicurezza "
 
 #: templates/index.html:60
 msgid ""
