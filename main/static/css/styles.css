@@ -738,8 +738,8 @@ img.footerpic {
 @media (min-width: 768px) {
   /* carousel overlay: reposition to top-left and left-align text on desktop */
   .carouseloverlay {
-    top: 0 !important;
-    left: 0 !important;
+    top: 2rem !important;
+    left: 2rem !important;
     transform: none !important;
     align-items: flex-start;
     text-align: left;
