@@ -736,6 +736,15 @@ img.footerpic {
 
 /* ≥768px: desktop-only visible, mobile-only hidden; larger brand and teacher image; blog images constrained */
 @media (min-width: 768px) {
+  /* carousel overlay: reposition to top-left and left-align text on desktop */
+  .carouseloverlay {
+    top: 0 !important;
+    left: 0 !important;
+    transform: none !important;
+    align-items: flex-start;
+    text-align: left;
+  }
+
   /* toggle which wrapper shows on desktop */
   .mobile-only { display: none; }
   .desktop-only { display: block; }
