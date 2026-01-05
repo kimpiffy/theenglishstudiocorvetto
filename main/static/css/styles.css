@@ -813,6 +813,13 @@ img.footerpic {
   }
 }
 
+/* ≥1200px: reduce door image size on laptop and above */
+@media (min-width: 1200px) {
+  #about img[src*="door.webp"] {
+    max-width: 75%;
+  }
+}
+
 /* ≥1400px: max two-up image height */
 @media (min-width: 1400px) {
   .two-up .two-up-img {
