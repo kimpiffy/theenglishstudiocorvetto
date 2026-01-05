@@ -319,18 +319,20 @@ img.footerpic {
 
 /* foreground overlay container (above background overlay) */
 .carouseloverlay {
-  position: absolute;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  position: absolute !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  max-width: 90% !important;
+  padding: 1rem !important;
+  background-color: rgba(55, 55, 107, 0.651);
+  border-radius: 1rem;
   z-index: 2;
-}
-
-/* switch carousel overlay text to navy on md+ while keeping mobile white */
-@media (min-width: 768px) {
-  .text-navy-lg,
-  .text-navy-lg h3,
-  .text-navy-lg p,
-  .text-navy-lg a {
-    color: #37376B !important;
-  }
 }
 
 /* teacher avatar sizing in cards/sections */
