@@ -814,8 +814,8 @@ img.footerpic {
 }
 
 /* ≥1200px: reduce door image size on laptop and above */
-@media (min-width: 1200px) {
-  #about img[src*="door.webp"] {
+@media (min-width: 1080px) {
+  .cursive {
     max-width: 75%;
   }
 }
