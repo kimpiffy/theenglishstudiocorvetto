@@ -323,6 +323,16 @@ img.footerpic {
   z-index: 2;
 }
 
+/* switch carousel overlay text to navy on md+ while keeping mobile white */
+@media (min-width: 768px) {
+  .text-navy-lg,
+  .text-navy-lg h3,
+  .text-navy-lg p,
+  .text-navy-lg a {
+    color: #37376B !important;
+  }
+}
+
 /* teacher avatar sizing in cards/sections */
 .rounded-circle.mb-3.teacher_pic {
   width: 10rem;
